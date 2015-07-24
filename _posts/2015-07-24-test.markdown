@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "깃헙 블로깅"
+date:   2015-07-24 09:44:00
+categories: etc
+---
+
+생각 정리,
+
+자료 정리,
+
+스터디 정리,
+
+차근차근 고고씽
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+
+[moka-a]: https://github.com/moka-a
+[jekyll]:    http://jekyllrb.com
