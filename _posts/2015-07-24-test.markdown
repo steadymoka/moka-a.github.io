@@ -13,7 +13,7 @@ categories: etc
 
 차근차근 고고씽
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [moka-a].
 
 [moka-a]: https://github.com/moka-a
 [jekyll]:    http://jekyllrb.com
