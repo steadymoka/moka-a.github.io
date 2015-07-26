@@ -1,7 +1,7 @@
 # Site navigation links
 
 - title: Home
-  url: 
+  url: /
 
 - title: Blog
   url: /blog/
@@ -12,8 +12,8 @@
 - title: About
   url: /about/
 
-- title: Contact
-  url: /contact/
+- title: Portfolio
+  url: /portfolio/
 
 - title: Search
   url: /search/

@@ -4,20 +4,16 @@ title: "Hello World"
 modified:
 categories: blog
 excerpt:
-tags: []
+tags: [etc]
 image:
   feature:
-date: 2014-08-08T15:39:55-04:00
+date: 2015-07-26T23:39:55-04:00
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Hello world!
 
-## Sample Heading
-
-### Sample Heading 2
-
-Jekyll also offers powerful support for code snippets:
+안녕하세요. 지킬로 깃헙 페이지에 블로그 만들고 첫 포스팅 입니다 <br>
+좀 익숙해지면 좀더 커스텀 해야겠네요 <br>
 
 {% highlight ruby %}
 def print_hi(name)

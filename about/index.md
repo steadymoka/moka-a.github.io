@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About 모카
+title: 
 excerpt: "So Simple is a responsive Jekyll theme for your words and images."
 modified: 2015-07-26T19:44:38.564948-04:00
 image:
@@ -12,6 +12,7 @@ image:
 ## Moka is all about:
 
 * 이메일 : aud1220a@gmail.com
+* 깃헙 : [moka-a](http://github.com/moka-a)
 * [마블루스](http://www.mavlux.com/) - [캐스트미](http://www.castme.kr) 개발중
 * ..
 
