@@ -1,11 +1,11 @@
 # Site wide configuration
 
-title: Moka Dev
+title: "Moka Dev"
 locale: en_US
-description: Describe your website here.
+description: ""
 logo: site-logo.png
 search: true
-url: "http://moka.github.io"
+url: "http://localhost:4000/"
 
 # Jekyll configuration
 permalink:   /:categories/:title/
