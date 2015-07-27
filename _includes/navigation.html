@@ -7,7 +7,7 @@
 		    {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
-		    <li><a href="{{link.url | prepend: site.baseurl}}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    <li><a href="{{link.url | prepend: site.baseurl}}" class="active" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
 	    </ul>
 	</nav>
