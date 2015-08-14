@@ -48,3 +48,30 @@ event 의 getX()와 getY() 는 해당 뷰의 x,y 값을 리턴해주고, getRawX
  - rotation
 
 animation 구현할때는 ViewHelper 를 쓰는게 답인것 같다. ViewHelper 가 어떻게 동작하는지 내부를 확실하게 알아 볼 필요가 있다. ViewHelper 는 짱짱이었다 ...
+
+#### View 이벤트
+onTouchEvent 에서 false 를 리턴시키면 모든 이벤트 동작을 안한다.
+requestDisallowInterceptTouchEvent 를 true 로 넣어주면 ACTION_CANCEL 이 발생하지 않는다.
+
+#### Cannot call this method while RecyclerView is computing a layout or scrolling
+리사이클러 뷰에 레이아웃 매니저를 이용하여 grid Count 를 변경 시켰다.
+
+{% highlight java %}
+layoutManager.setSpanCount( gridCount );
+layoutManager.requestLayout();
+{% endhighlight java %}
+
+를 이용하여 그리드 카운트를 변경시켰는데, 다른 액티비티에 갔다가 와서 스크롤할때
+<br>Cannot call this method while RecyclerView is computing a layout or scrolling<br>
+에러가 발생한다 
+
+해결해야 한다
+구글 검색 결과 notifyDataSetChanged 호출을 Handler 를 이용하여 post 해주라고 하여 하니까 일단은 되는것 같다. flag 를 두어서 해결하는 방법도 있는듯 하다. >>>> 정확한 문제를 잘 모르겠다.
+
+그리고 또 다음 에러가 발생한다. recyclerView 내부 에러인듯 하다
+<br>Inconsistency detected. Invalid item position 14(offset:14).state:27<br>
+이에러는 뷰가 리프레쉬 될때 스크롤을 할시 발생하는 버그이다. isRefreshing 이라는 플레그값을 두어 onTouch 에서 리프레쉬 중일때 이벤트를 막는걸로 임시방편을 하였다. 
+
+내부 버그라 다음 릴리즈일때 고쳐진다는것 같은데, 정확한건 모르겠다. 
+
+그리드 카운트를 바꾸는 좋은 방법이 있으면 알려줬으면 좋겠다.
