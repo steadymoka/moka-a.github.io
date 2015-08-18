@@ -75,3 +75,8 @@ layoutManager.requestLayout();
 내부 버그라 다음 릴리즈일때 고쳐진다는것 같은데, 정확한건 모르겠다. 
 
 그리드 카운트를 바꾸는 좋은 방법이 있으면 알려줬으면 좋겠다.
+
+#### EditTextView 의 입력다한후 다음 버튼 없애기 
+{% highlight java %}
+	android:imeOptions="actionDone"
+{% endhighlight java %}
