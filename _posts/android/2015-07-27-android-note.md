@@ -2,7 +2,7 @@
 layout: post
 title: "안드로이드 노트"
 modified:
-categories: blog
+categories: android
 excerpt:
 tags: [android, actionbar]
 image:
@@ -119,5 +119,17 @@ editText 에 addOnTextChange 를 호출하여 리스너를 등록한후
 afterText 를 구현한다.
 
 setOnFocusChanged 를 이용하여 hasFocus 가 false 일때를 구현하면 포커스를 잃을때 행동을 할수 있다.
+
+<br>
+<br>
+<br>
+<br>
+    
+#### 이미지 resize 하기
+{% highlight java %}
+    Bitmap sizingBmp = Bitmap.createScaledBitmap(bitmap, (int) width, (int)height, true);
+{% endhighlight java %}
+
+    
 
 

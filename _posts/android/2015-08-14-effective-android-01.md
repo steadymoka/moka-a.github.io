@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Effective android"
+title: "Effective android 01) Single Responsibility"
 modified:
 categories: android
 excerpt:

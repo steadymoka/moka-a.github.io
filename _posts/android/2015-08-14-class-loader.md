@@ -14,11 +14,4 @@ date: 2015-08-14T23:39:55-04:00
 안드로이드에서는 저작권 문제로 달빅 가상 머신을 사용했었다가, 현재는 ART 라는것을 사용한다. 
 
 
-
-{% highlight java %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Moka')
-#=> prints 'Hi, Moka' to STDOUT.
-{% endhighlight %}
+-- 작성중 ..

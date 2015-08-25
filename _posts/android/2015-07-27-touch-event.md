@@ -2,7 +2,7 @@
 layout: post
 title: "[펌]이벤트 전달 메커니즘"
 modified:
-categories: blog
+categories: android
 excerpt:
 tags: [android, touch, event]
 image:
