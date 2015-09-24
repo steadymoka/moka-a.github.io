@@ -130,6 +130,16 @@ setOnFocusChanged 를 이용하여 hasFocus 가 false 일때를 구현하면 포
     Bitmap sizingBmp = Bitmap.createScaledBitmap(bitmap, (int) width, (int)height, true);
 {% endhighlight java %}
 
-    
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
 
 

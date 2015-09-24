@@ -13,7 +13,7 @@ image:
 
 * 이메일 : aud1220a@gmail.com
 * 깃헙 : [moka-a](http://github.com/moka-a)
-* [마블루스](http://www.mavlux.com/) - [캐스트미](http://www.castme.kr) 개발중
+* [마블루스](http://www.mavlux.com/) - [캐스트미 웹](http://www.castme.kr) / [캐스트미 앱](https://play.google.com/store/apps/details?id=com.mavlux.castme) 개발중
 * ..
 
 [^1]: Example: *domain.com/category-name/post-title*
