@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드 이벤트 전달"
+title: "안드로이드) 이벤트 전달 분석"
 modified:
 categories: android
 excerpt:

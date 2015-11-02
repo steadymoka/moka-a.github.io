@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드 노트2 - 2015.10.23"
+title: "안드로이드) 노트2 - 2015.10.23"
 modified:
 categories: android
 excerpt:

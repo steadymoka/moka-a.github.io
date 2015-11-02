@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[펌]이벤트 전달 메커니즘"
+title: "안드로이드)[펌]이벤트 전달 메커니즘"
 modified:
 categories: android
 excerpt:
