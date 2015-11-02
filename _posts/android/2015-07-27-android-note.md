@@ -7,7 +7,7 @@ excerpt:
 tags: [android, actionbar]
 image:
   feature:
-date: 2015-07-27T19:39:55-04:00
+date: 2015-10-20T19:39:55-04:00
 ---
 <br>
 <br>
