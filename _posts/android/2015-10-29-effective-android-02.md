@@ -32,4 +32,4 @@ Don't put everything in one class and modify it all the time.
 이펙티브 안드로이드에 저렇게만 설명이 아니라, 예를 들어 어떻게 사용하면 좋을지 좀더 설명 해줬으면 더 좋았겠다는 생각을 한다. 
 
 
-[출말][http://orhanobut.github.io/effective-android/](http://orhanobut.github.io/effective-android/)
+[출처] [http://orhanobut.github.io/effective-android/](http://orhanobut.github.io/effective-android/)
