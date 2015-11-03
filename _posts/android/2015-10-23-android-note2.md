@@ -4,7 +4,7 @@ title: "안드로이드) 노트2 - 2015.10.23"
 modified:
 categories: android
 excerpt:
-tags: [android, actionbar]
+tags: [android]
 image:
   feature:
 date: 2015-10-23T19:39:55-04:00
