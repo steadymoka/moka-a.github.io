@@ -38,7 +38,7 @@ GEM
       jekyll (~> 3.0)
     octopress-hooks (2.6.1)
       jekyll (>= 2.0)
-    posix-spawn (0.3.9)
+    posix-spawn (0.3.11)
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
@@ -64,4 +64,4 @@ DEPENDENCIES
   rouge
 
 BUNDLED WITH
-   1.10.6
+   1.11.1
