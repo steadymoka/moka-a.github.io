@@ -2,7 +2,7 @@
 layout: post
 title: "Effective android 01) Single Responsibility"
 modified:
-categories: android
+categories: effective-android
 excerpt:
 tags: [android, effective-android]
 image:

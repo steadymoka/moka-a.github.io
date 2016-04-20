@@ -12,8 +12,16 @@ image:
 ## Moka is all about:
 
 * 이메일 : aud1220a@gmail.com
-* 깃헙 : [moka-a](http://github.com/moka-a)
-* [마블루스](http://www.mavlux.com/) - [캐스트미 웹](http://www.castme.kr) / [캐스트미 앱](https://play.google.com/store/apps/details?id=com.mavlux.castme) 개발중
+* 깃헙 : moka-a&nbsp;&nbsp;[http://github.com/moka-a]
+* Insta : moka_q&nbsp;&nbsp;[https://www.instagram.com/moka_q/]
+* in [마블루스](http://www.mavlux.com/) - 
 * ..
 
-[^1]: Example: *domain.com/category-name/post-title*
+## my portfolio:
+
+* Morning Cafe   :   [알람, 날씨 .. 모카](https://play.google.com/store/apps/details?id=com.moka.earylbird)
+* 캐스트미   :   [배우 캐스팅을 위한 원스톱 플렛폼](https://play.google.com/store/apps/details?id=com.mavlux.castme) / [www.castme.kr](www.castme.kr)
+* ..
+
+
+<!-- [^1]: Example: *domain.com/category-name/post-title* -->

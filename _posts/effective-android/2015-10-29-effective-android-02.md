@@ -2,7 +2,7 @@
 layout: post
 title: "Effective android 02) Open/Closed Principle"
 modified:
-categories: android
+categories: effective-android
 excerpt:
 tags: [android, effective-android]
 image:

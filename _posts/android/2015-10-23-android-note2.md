@@ -9,8 +9,6 @@ image:
   feature:
 date: 2015-10-23T19:39:55-04:00
 ---
-<br>
-<br>
 
 #### Glide 에서 콜백 받기
 Glide 란 이미지 로드에 쓰이는 라이브러리 ( 구글에서 개발중이다. )
@@ -20,27 +18,28 @@ Glide 란 이미지 로드에 쓰이는 라이브러리 ( 구글에서 개발중
 
 ###### Glide, bitmap 자원 콜백 
 
-{% highlight java %}
-   Glide.with( getContext() )
-		.load( imageUrl )
-		.asBitmap()
-		.fitCenter()
-		.into( new BitmapImageViewTarget( imageView_image ) {
+``` java
+Glide.with( getContext() )
+         .load( imageUrl )
+         .asBitmap()
+         .fitCenter()
+         .into( new BitmapImageViewTarget( imageView_image ) {
+         
+         	@Override
+         	protected void setResource( Bitmap resource ) {
+         
+         		super.setResource( resource );
+         	}
+         
+         	@Override
+         	public void onLoadFailed( Exception e, Drawable errorDrawable ) {
+         
+         		super.onLoadFailed( e, errorDrawable );
+         	}
+         
+         } );
+```
 
-			@Override
-			protected void setResource( Bitmap resource ) {
-
-				super.setResource( resource );
-			}
-
-			@Override
-			public void onLoadFailed( Exception e, Drawable errorDrawable ) {
-
-				super.onLoadFailed( e, errorDrawable );
-			}
-
-		} );
-{% endhighlight %}
 
 asBitmap() 함수를 호출한후 into 에 BitmapImageViewTarget 의 객체를 넘겨주어 콜백을 받으며 된다.
 setResource 는 이미지를 로드한후 targetView 에 bitmap 을 set 하려고 불리는 함수이다.

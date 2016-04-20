@@ -2,7 +2,7 @@
 layout: post
 title: "Effective android 03) Liskov's Substitution"
 modified:
-categories: android
+categories: effective-android
 excerpt:
 tags: [android, effective-android]
 image:
@@ -24,11 +24,11 @@ Always make super call in fragments/activities
 액티비티/프레그먼트에서 항상 super 을 호출 하여야 한다.
 
 
-### --
 객체지향적인 패턴에서 사용되는 법칙인듯하다.
 
 구글 검색해보니 아래 예제가 있다.
-{% highlight java %}
+
+```java
 // Violation of Likov's Substitution Principle
 class Rectangle
 {
@@ -74,7 +74,7 @@ class LspTest
 {
 	private static Rectangle getNewRectangle()
 	{
-		// it can be an object returned by some factory ... 
+		// it can be an object returned by some factory  
 		return new Square();
 	}
 
@@ -91,7 +91,7 @@ class LspTest
 		// now he's surprised to see that the area is 100 instead of 50.
 	}
 }
-{% endhighlight %}
+```
 
 기본으로 되는 Retagle 클래스가있고,
 그것을 확장하여 Sqaure 클래스를 만들었다.
