@@ -19,19 +19,11 @@
         <h1 class="">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
       </header>
 
-      {% if page.url == "/blog/" or page.url == "/" %}
-        <div class="entry-content" style="max-width: 75%">
+      <div class="entry-content" style="max-width: 75%">
           {{ content }}
-        </div>
-      {% endif %}
+      </div>
 
-      {% if page.url == "/about/" or page.url == "/search/" %}
-        <div class="entry-content">
-          {{ content }}
-        </div>
-      {% endif %}
-
-      {% if page.url == "/blog/" or page.url == "/" %}
+      {% if page.url == "/blog/" or page.url == "/" or page.url == "/tags/" %}
         {% include sidebar.html %}
       {% endif %}
 

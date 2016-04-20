@@ -26,7 +26,7 @@ Split interfaces
 
 
 
-```java
+{% highlight java %}
 // interface segregation principle - bad example
 interface IWorker {
 	public void work();
@@ -63,14 +63,14 @@ class Manager {
 		worker.work();
 	}
 }
-```
+{% endhighlight %}
 
 나쁜예이다.
 IWorker 라는 인터페이스에 work(), eat() 가 한번에 정의되어 있다.
 그리고 Worker , SuperWorker 가 각각 구현하고 있다. 여기까지는 갠찮다. 하지만 Robot 이라는것을 IWorker 를 구현한다고 하면, eat 이라는것은 필요가 없다.
 이런것을 고려하여 인터페이스를 구분하여 work 를 정의하는것과 eat 을 정의하는것 따로 만들라는 소리이다.
 
-```java
+{% highlight java %}
 // interface segregation principle - good example
 interface IWorker extends Feedable, Workable {
 }
@@ -120,7 +120,7 @@ class Manager {
 		worker.work();
 	}
 }
-```
+{% endhighlight %} 
 
 결론은 이런식으로 해야 좀더 유연하고, 확장 가능하게 개발이 될수있다는 것이다.
 현재 개발된 프로젝트를 생각해보니, 인터페이스를 구현하고 있는 부분에서 ignore 주석 처리해논것이 몇몇 생각이 난다. 또한 어떤 조건에 따라 다른 구현을 하도록 한것도 생각이 난다.

@@ -58,14 +58,14 @@ OnDestroy() - 거의 사용x<br>
 <br>
 
 #### Theme , 전체화면 설정하기
-``` java
+{% highlight java %}
 <item name="android:windowFullscreen">true</item>
-```
+{% endhighlight %}
 : 상태바가 사라진다 / 전체 화면
 
-``` java
+{% highlight java %}
 <item name="android:windowTranslucentStatus">true</item>
-```
+{% endhighlight %}
 : 상태바는 보이되, 뷰영역이 상태바 까지 모두 포함되어 겹쳐서 보이게 된다
  -> margin 을 위쪽에 두어 사용해야됨
 

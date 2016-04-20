@@ -31,7 +31,7 @@ Use abstractions as much as possible while defining variables,parameters.
 
 
 
-```java
+{% highlight java %}
 // Dependency Inversion Principle - Bad example
 // 나쁜 예
 
@@ -63,9 +63,9 @@ class SuperWorker {
 		//.... working much more
 	}
 }
-```
+{% endhighlight %}
 
-```java
+{% highlight java %}
 // Dependency Inversion Principle - Good example
 // 좋은예
 
@@ -96,7 +96,7 @@ class Manager {
 		worker.work();
 	}
 }
-```
+{% endhighlight %}
 
 인터페이스를 이용하여 추상화 시켜놓으면 인터페이스의 함수를 호출함으로써 그 인터페이스를 구현하고 있는 모든 클래스에서 호출되도록 할수 있다. 
 하지만 이럴경우, IWorker 를 확장하는 경우 모든 클래스가 영향을 받을수가 있어 문제가 생길위험이 있을수 있다. 따라서 저번시간에 보았던 개념도 잘 적용하여 잘 써야 할듯 하다.

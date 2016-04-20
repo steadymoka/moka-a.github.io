@@ -28,7 +28,7 @@ Always make super call in fragments/activities
 
 구글 검색해보니 아래 예제가 있다.
 
-```java
+{% highlight java %}
 // Violation of Likov's Substitution Principle
 class Rectangle
 {
@@ -91,7 +91,7 @@ class LspTest
 		// now he's surprised to see that the area is 100 instead of 50.
 	}
 }
-```
+{% endhighlight %}
 
 기본으로 되는 Retagle 클래스가있고,
 그것을 확장하여 Sqaure 클래스를 만들었다.

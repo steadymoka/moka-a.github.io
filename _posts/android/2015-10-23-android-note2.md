@@ -18,7 +18,7 @@ Glide 란 이미지 로드에 쓰이는 라이브러리 ( 구글에서 개발중
 
 ###### Glide, bitmap 자원 콜백 
 
-``` java
+{% highlight java %}
 Glide.with( getContext() )
          .load( imageUrl )
          .asBitmap()
@@ -38,7 +38,7 @@ Glide.with( getContext() )
          	}
          
          } );
-```
+{% endhighlight %}
 
 
 asBitmap() 함수를 호출한후 into 에 BitmapImageViewTarget 의 객체를 넘겨주어 콜백을 받으며 된다.
