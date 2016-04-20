@@ -18,7 +18,7 @@ Glide 란 이미지 로드에 쓰이는 라이브러리 ( 구글에서 개발중
 
 이번에 소개할 내용은 glide 에 콜백을 받는 것에 대한것이다. <br>
 
-###### bitmap 자원 콜백 
+###### Glide, bitmap 자원 콜백 
 
 {% highlight java %}
    Glide.with( getContext() )
@@ -47,7 +47,7 @@ setResource 는 이미지를 로드한후 targetView 에 bitmap 을 set 하려�
 
 위에 불린 함수 말고도 override 목록을 보면 다양한 콜백을 받을수있다.
 
-###### drawable 자원 콜백 
+###### Glide, drawable 자원 콜백 
 Bitmap 을 받을 필요가 없다면, GlideDrawableImageViewTarget 객체를 넘겨주어 위와 같은 콜백들을 받을수 있다. 단, 여기서는 bitmap 이 넘어오는게 아니라 drawable 객체가 넘어온다.
 
 <br>
@@ -98,6 +98,33 @@ recyclerView 에 layoutManager 를 StaggeredGridLayoutManager 로 set 해주면 
 
 <br>
 <br>
+<br>
+<br>
+
+#### Image 가 메모리 얼마나 먹을까 ?
+ARGB 이미지 1px -> 4Byte 메모리 차지
+100 * 100 px 의 이미지라면, 40000 Byte 를 차지한다.
+40000 Byte 면 40 KB : 보통의 아이콘 이미지가 100px * 100px 부근 이다
+
+1000 * 1000 px 의 이미지라면 4000 KB , 4 MB 를 차지하게 된다. 
+
+<br>
+<br>
+<br>
+<br>
+
+#### 안드로이드 GC 와 메모리 관리에 관해
+안드로이드는 null, clear 등으로 참조를 끊는다고 해서 바로 gc 가 일어나지 않는다. 
+일반적인 int/long/String 으로는 메모리를 OOM 날정도로 많이 올라갈일이 없다. 
+메모리를 많이 차지하는 것으로는 네트워크나 파일IO 이고 가장 큰것은 이미지이다. 
+이미지 대신 canvas를 이용하는게 리소스를 적게 먹는 방법이다.
+
+4.x.x 버전 부터는 이미지가 화면에 노출되는 것이 아니면 안드로이드 OS 에서 자동으로 recycle 시키도록 되어 gc 의 대상이 바로 된다. 
+
+
+
+
+
 
 
 

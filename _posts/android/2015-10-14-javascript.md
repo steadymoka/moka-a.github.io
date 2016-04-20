@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavaScript"
+title: "JavaScript / NodeJS"
 modified:
 categories: javascript
 excerpt:
@@ -9,3 +9,9 @@ image:
   feature:
 date: 2015-07-15T19:39:55-04:00
 ---
+
+#### 객체 복사
+{% highlight javascript %}
+var object = { ... };
+var copyObject = Object.assign( {}, object );
+{% endhighlight %}

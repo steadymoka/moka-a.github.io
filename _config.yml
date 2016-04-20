@@ -9,7 +9,7 @@ comments: true
 
 # Jekyll configuration
 permalink:   /:categories/:title/
-markdown:    kramdown
+markdown:    kramdown # redcarpet # kramdown 
 highlighter: pygments
 sass:
   sass_dir: _sass

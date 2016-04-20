@@ -7,8 +7,10 @@ excerpt:
 tags: [android]
 image:
   feature:
-date: 2015-11-2T23:39:55-04:00
+date: 2016-04-04T23:39:55-04:00
 ---
+<br>
+<br>
 
 #### Activity Life Cycle 다시보기 
 OnCreate() - 최초생성될때 호출, UI 구성 ( setContentView() )<br>
@@ -24,7 +26,7 @@ OnDestroy() - 거의 사용x<br>
 <br>
 <br>
 
-#### onReceive
+#### onReceive 처리시 주의할점
 브로드캐스트리시버에서 onReceive 에서 받아서 처리를 할경우 이 함수는 UI 스레드에서 처리되기 때문에, 시간이 오래 걸리는 작업을 하면 안된다. 따라서 별도의 쓰레드를 뺴서 처리를 하거나 IntentService 를 이용하여 처리해야 한다.
 
 <br>
@@ -32,7 +34,7 @@ OnDestroy() - 거의 사용x<br>
 <br>
 <br>
 
-#### IntentService
+#### IntentService 로 구현하기 
 서비스는 기본적으로 UI 쓰레드에서 동작을 한다. 하지만 IntentService 는 별도의 작업쓰레드에서 처리가 되며, onHandleIntent 에서 처리가 된다. 빠른 시간에 여러번 요청이 오면 병렬처리가 되는게 아니라 스택처럼 직렬로 처리가 된다.
 노티피케이션이나 알람받았을때 처리하는 동작을 하면 좋을듯 하다.
 
@@ -53,8 +55,22 @@ OnDestroy() - 거의 사용x<br>
 스크롤뷰의 하위에 Linear 또는 Relative 를 두고, 이 뷰들의 margin 을 주면 위, 왼쪽, 오른쪽은 잘 먹히는데 marginBottom 은 제대로 먹지를 않는다. 그래서 스크롤이 원하는대까지 밑으로 내려가지 않는 버그가 있다. 구글링결과 안드로이드 버그인걸로 보이고 magin 대신에 padding 을 주어야 될것 같다. 하지만 내가 만든뷰에서는 해당 자식뷰의 배경스타일이 있어 margin 을 padding 으로 바꿀수가 없다. 그래서 약간의 꼼수로 제일밑에 그냥 더미 view 로 height 만있는 투명한 뷰를 만들어 margin 의 역활을 할수 있도록 하였다. 
 
 <br>
+<br>
+<br>
+<br>
+
+#### Theme , 전체화면 설정하기
+<item name="android:windowFullscreen">true</item>
+: 상태바가 사라진다 / 전체 화면
+<item name="android:windowTranslucentStatus">true</item>
+: 상태바는 보이되, 뷰영역이 상태바 까지 모두 포함되어 겹쳐서 보이게 된다
+ -> margin 을 위쪽에 두어 사용해야됨
+
 
 <!-- #####  -->
+<!--
 
 {% highlight java %}
 {% endhighlight %}
+
+-->
