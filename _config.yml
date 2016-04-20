@@ -10,15 +10,12 @@ comments: true
 # Jekyll configuration
 permalink:   /:categories/:title/
 markdown:    kramdown # redcarpet # kramdown 
-highlighter: pygments
+highlighter: rouge
 sass:
   sass_dir: _sass
   style: compressed
 gems:
   - jekyll-sitemap
-
-redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
 
 kramdown:
   auto_ids: true
