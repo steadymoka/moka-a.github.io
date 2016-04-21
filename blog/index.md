@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Moka's Blog ............
+title: Moka's Blog - 
 excerpt: "An archive of blog posts sorted by date."
 search_omit: true
 ---
@@ -38,8 +38,8 @@ search_omit: true
 </li>
 {% endfor %}
 
-<h2 id="blog">blog</h2>
-{% for post in site.categories.blog %} 
+<h2 id="etc">etc</h2>
+{% for post in site.categories.etc %} 
 <li>
     <article>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} 

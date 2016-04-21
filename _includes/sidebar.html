@@ -1,4 +1,5 @@
-<div class="col-lg-4" style="position: relative;float: right;top: -109px;">
+
+<div id="sticker" class="col-lg-4" style="position: relative; float: right;">
    <!--  <h4>Search</h4>
     <div class="hline"></div>
         <p>
@@ -40,9 +41,9 @@
     padding-top: 12px;
     padding-bottom: 12px;">  Recent Posts</h4>
     <div class="hline"></div>
-    {% for post in site.categories['blog'] limit:4 %}
+    {% for post in site.posts limit:5 %}
         <a href="{{ post.url }}" style="font-weight: bold; font-size: 17px">{{ post.title }}</a><br>
-        <em style="margin-bottom: 7px; font-size: 12px">Posted on {{ post.date | date_to_string }}</em>
+        <em style="margin-bottom: 2px; font-size: 12px;position: relative;top: -5px;">Posted on {{ post.date | date_to_string }}</em>
         <br>
         <div style="height: 10px"> &nbsp; </div>
     {% endfor %}

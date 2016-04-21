@@ -2,7 +2,7 @@
 layout: post
 title: "스티브잡스 마지막말"
 modified: 2015-11-22T23:39:55-04:00
-categories: blog
+categories: etc
 excerpt:
 tags: [스티브잡스]
 image:

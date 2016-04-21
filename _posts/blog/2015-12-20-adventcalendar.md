@@ -2,7 +2,7 @@
 layout: post
 title: "rails api server"
 modified: 2015-12-20T23:39:55-04:00
-categories: blog
+categories: etc
 excerpt:
 tags: [ruby, rails]
 image:
