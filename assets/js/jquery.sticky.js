@@ -52,8 +52,9 @@
           etse = elementTop - s.topSpacing - extra;
 
         //update height in case of dynamic content
-        s.stickyWrapper.css('height', s.stickyElement.outerHeight());
-        s.stickyWrapper.css('height', 100);
+        s.stickyWrapper.css('height', s.stickyElement.outerHeight())
+                       .css('float', 'right')
+                       .css('width', '20%');
 
         if (scrollTop <= etse) {
           if (s.currentTop !== null) {
@@ -88,7 +89,6 @@
                 newWidth = s.stickyElement.width();
             }
             s.stickyElement
-              .css('right', 446)
               .css('width', newWidth)
               .css('position', 'fixed')
               .css('top', newTop )
@@ -126,7 +126,6 @@
               .css('z-index', '');
           } else {
             s.stickyElement
-              .css('right', 446)
               .css('position', 'fixed')
               .css('top', newTop )
               .css('bottom', '')
