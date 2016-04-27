@@ -24,6 +24,16 @@ OnDestroy() - 거의 사용x<br>
 <br>
 <br>
 
+#### Fragment Life Cycle 다시보기 
+최초 화면이 뜰때, onCreateView() -> onViewCreated() -> onStart() -> onResume()
+프레그먼트 위로 다른 액티비티가 뜰때, onStop()
+위에 있던 액티비티가 사라질때, onStart() -> onResume()
+
+<br>
+<br>
+<br>
+<br>
+
 #### onReceive 처리시 주의할점
 브로드캐스트리시버에서 onReceive 에서 받아서 처리를 할경우 이 함수는 UI 스레드에서 처리되기 때문에, 시간이 오래 걸리는 작업을 하면 안된다. 따라서 별도의 쓰레드를 뺴서 처리를 하거나 IntentService 를 이용하여 처리해야 한다.
 
