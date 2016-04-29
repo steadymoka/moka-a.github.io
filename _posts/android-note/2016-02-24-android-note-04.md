@@ -7,7 +7,7 @@ excerpt:
 tags: [android, Service]
 image:
   feature:
-date: 2016-02-24T19:39:55-04:00
+date: 2016-04-07
 ---
 
 ### Service ( startServer()  ->  onStartCommend() )

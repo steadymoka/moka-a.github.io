@@ -7,7 +7,7 @@ excerpt:
 tags: [android]
 image:
   feature:
-date: 2016-04-04T23:39:55-04:00
+date: 2016-04-04
 ---
 
 #### Activity Life Cycle 다시보기 
