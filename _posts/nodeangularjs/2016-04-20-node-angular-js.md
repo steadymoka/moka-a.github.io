@@ -34,3 +34,36 @@ angular.element( '#mCSB_1' ).bind( 'mousewheel', function( e ) {
         e.preventDefault();
 });
 ```
+
+<br>
+
+#### 루프 연산자
+``` javascript
+for( var i; i < length; i++ ) {
+    var item = array[i];
+    ...
+}
+// 가장 기본적인 for 문, 대부분의 언어의 문법과 동일
+
+for( var item in array ) {
+
+}
+// for 문 진화 형태 ?
+
+array.forEach( function( item, index ) {
+    ...
+} )
+// 배열을 순차적으로 돌면서 function 함수 실행, `리턴 값이 없다``
+
+array.map( function( item ) {
+    return ..
+} )
+// map 으로 넘겨준 함수로 array 의 아이템이 하나씩 들어오면 리턴값 들로 `새 배열을 리턴`한다
+
+array.filter( function( item ) {
+    return true; // or false
+} )
+// 콜백 함수가 true를 반환하는 것만 모아서 `새 배열을 리턴`한다.
+
+```
+
