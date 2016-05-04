@@ -43,7 +43,7 @@ float: right;">
     padding-top: 12px;
     padding-bottom: 12px;">  Recent Posts</h4>
     <div class="hline"></div>
-    {% for post in site.posts limit:5 %}
+    {% for post in site.posts limit:4 %}
         <a href="{{ post.url }}" style="font-weight: bold; font-size: 17px">{{ post.title }}</a><br>
         <em style="margin-bottom: 2px; font-size: 12px;position: relative;top: -5px;">Posted on {{ post.date | date_to_string }}</em>
         <br>
