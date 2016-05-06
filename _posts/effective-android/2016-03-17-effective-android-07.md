@@ -7,7 +7,7 @@ excerpt:
 tags: [android, effective-android]
 image:
   feature:
-date: 2016-02-17
+date: 2016-03-21
 ---
 
 ### 7. Aim for Loosely Coupling
