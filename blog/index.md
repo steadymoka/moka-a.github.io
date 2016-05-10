@@ -85,4 +85,20 @@ search_omit: true
     </article>
 </li>
 {% endfor %}
+
+<h2 id="db">DB</h2>
+{% for post in site.categories.db %} 
+<li>
+    <article>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} 
+            <em class="entry-date" style="float: right;"><br>
+                <span style="font-size: 11px">posted on </span>
+                <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{ post.date | date: "%B %d, %Y" }}
+                </time>
+            </em>
+        </a>
+    </article>
+</li>
+{% endfor %}
 </ul>
