@@ -28,16 +28,16 @@ date: 2016-05-02
 
 <br><br>
 
-#### 고찰
+#### * 고찰
 for 문에는 일반적인 for 문, for in 문 ( for-each ), iterator( 써보지는 않았다 .. ), 등이 있는걸로 알고있다.
 자바스크립트에서는 map, filter, 등등으로 람다식을 넘겨주는걸로도 가능하고, rxJava 를 이용하여 이러한 문법을 이용할수 있다고는 알고있다. 사실 어떤걸 쓸지는 성능같은거는 별로 신경안쓰고 코딩하기 편한걸로 쓰긴하지만. 확실히 어떻게 동작하고 어떤 차이가 있는지는 알고있는게 좋을것 같다.
 
-..
-https://www.youtube.com/watch?v=MZOf3pOAM6A&feature=youtu.be 
+..<br>
+[https://www.youtube.com/watch?v=MZOf3pOAM6A&feature=youtu.be](https://www.youtube.com/watch?v=MZOf3pOAM6A&feature=youtu.be) <br>
 관련 영상이다. 도움이될것 같다.
 
 
-근데 구글 디벨로퍼 http://developer.android.com/intl/ko/training/articles/perf-tips.html#Loops 에서는 for-each 문이 제일 빠르다고 하는데, 위의 글에서는 전통적인 for 문이 더 빠르다고 하니 둘중 하나가 틀린것 같다. 
+근데 구글 디벨로퍼 [http://developer.android.com/intl/ko/training/articles/perf-tips.html#Loops](http://developer.android.com/intl/ko/training/articles/perf-tips.html#Loops) 에서는 for-each 문이 제일 빠르다고 하는데, 위의 글에서는 전통적인 for 문이 더 빠르다고 하니 둘중 하나가 틀린것 같다. 
 
 일반적으로는 for-each 문을 쓰도록 해야겠다 .
 
