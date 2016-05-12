@@ -6,8 +6,8 @@ search_omit: true
 ---
 <ul class="post-list">
 
-<h2 id="effective-android">effective-android</h2>
-{% for post in site.categories.effective-android %}
+<h2 id="android">android</h2>
+{% for post in site.categories.android %} 
 <li>
     <article>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} 
@@ -22,8 +22,8 @@ search_omit: true
 </li>
 {% endfor %}
 
-<h2 id="android">android</h2>
-{% for post in site.categories.android %} 
+<h2 id="effective-android">effective-android</h2>
+{% for post in site.categories.effective-android %}
 <li>
     <article>
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }} 
