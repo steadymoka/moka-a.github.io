@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Effective android 11) Use lazy load"
+title: "Effective android 11) Use final where applicable"
 modified:
 categories: effective-android
 excerpt:
