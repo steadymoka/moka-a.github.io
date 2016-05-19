@@ -10,7 +10,7 @@ image:
 date: 2016-05-17
 ---
 
-### 9. Use lazy load
+### 10. Use lazy load
 - Instantiate the json parser when needed
 - Instantiate the network adapter when needed
 - Instantiate fragments when they are called in the viewpager
@@ -18,7 +18,7 @@ date: 2016-05-17
 
 <br> 
 
-### 9. Use lazy load
+### 10. Use lazy load
 - json 파싱은 필요할때 해라
 - 네트워크 통신은 필요 할때 해라
 - 뷰페이저에서 프레그먼트가 불릴때 초기화 해라
