@@ -15,7 +15,7 @@ image:
 * github : moka-a&nbsp;&nbsp;[[http://github.com/moka-a]](http://github.com/moka-a)
 * Insta : moka_q&nbsp;&nbsp;[[https://www.instagram.com/moka_q/]](https://www.instagram.com/moka_q/)
 * slack name : moka
-* in [마블루스](http://www.mavlux.com/) - 
+* 자유로운 개발자 @_@_ - 
 * ..
 
 ## my portfolio:

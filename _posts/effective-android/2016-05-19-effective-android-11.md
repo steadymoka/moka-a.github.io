@@ -7,7 +7,7 @@ excerpt:
 tags: [android, effective-android]
 image:
   feature:
-date: 2016-05-17
+date: 2016-05-19
 ---
 
 ### 11. Use final where applicable
