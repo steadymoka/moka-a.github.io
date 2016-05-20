@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "#1. Android Architecture, Flux 살펴보기"
+title: "#1. Android Architecture, Flux/Agera 살펴보기"
 modified:
 categories: android
 excerpt:
@@ -52,7 +52,7 @@ Store 는 싱글톤으로 구현되어 있기때문에 바로 인스턴스에 �
 <br>
 
 #### Agera is
-`Aegra` Sample Project 를 분석해 보았다. 여기에는 정말 심플하게 `Observable` 와 `Updatable` 만을 사용해서 구성해 놓았다. <br>
+`Agera` Sample Project 를 분석해 보았다. 여기에는 정말 심플하게 `Observable` 와 `Updatable` 만을 사용해서 구성해 놓았다. <br>
 간단히 설명하면, `Observable`은 이벤트를 발생시키는 놈, `Updatable`은 이벤트를 관찰 하는 놈이라 보면된다. `Observable`에 Updatable 객체를 add 시켜줌으로써 관찰 하게 된다. `Observable` 도 `Updatable`이 될수 있다.<br>
 <br>
 
@@ -74,7 +74,7 @@ Agera 이슈에 보면 RxAndroid 와의 관계에 대한 토론한 글도 있고
 <br>
 [참고문서]<br>
 Agera 공식 github [[https://github.com/google/agera/wiki](https://github.com/google/agera/wiki)] <br>
-드라마앤컴퍼니 Rfrost님 포스팅 [[http://developer.dramancompany.com/2016/03/...](http://developer.dramancompany.com/2016/03/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%97%90-flux-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/)]
+드라마앤컴퍼니 rfrost님 [[http://developer.dramancompany.com/2016/03/...](http://developer.dramancompany.com/2016/03/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%EC%97%90-flux-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0/)]
 
 
 
