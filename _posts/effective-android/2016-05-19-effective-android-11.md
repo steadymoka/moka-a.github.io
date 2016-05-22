@@ -43,13 +43,14 @@ else
 in.read(); // Compiler error because variable 'in' might be unassigned
 }
 ```
-변수 in 에는 test 의 값에 따라 할당이 될수도 있고 안될수도 있다. 이런경우에 final 을 안붙일 경우 in.read() 에서 test 가 false 인 경우 Null Point Exception 이 날수가 있는데, final 키워드로 in 변수를 잡아주면, compile 단에서 in 이 초기화가 안되었기 때문에 error 가 나게되어 run time 에 에러날수있는 것을 피할수 있다. <br> 
+변수 in 에는 test 의 값에 따라 할당이 될수도 있고 안될수도 있다. 이런경우에 final 을 안붙일 경우 in.read() 에서 test 가 false 인 경우 Null Point Exception 이 날수가 있는데, final 키워드로 in 변수를 잡아주면, compile 단에서 in 이 초기화가 안되었기 때문에 error 가 나게되어 run time 에 에러날수있는 것을 피할수 있다. 
+
 
 이 외에도 다양하게 크레쉬가 날수있는 부분에서 사전에 컴파일단에서 에러를 방지 할수 있게 된다.
 `성능상`에는 이점이 없지만, 쓰는 습관을 들이는것이 좋을것 같다 !
 <br>
 <br>
-참고자료<br>
+##### 참고자료
 [http://stackoverflow.com/questions/137868/using-final-modifier-whenever-applicable-in-java](http://stackoverflow.com/questions/137868/using-final-modifier-whenever-applicable-in-java)
 
 [출처] [http://orhanobut.github.io/effective-android/](http://orhanobut.github.io/effective-android/)         
