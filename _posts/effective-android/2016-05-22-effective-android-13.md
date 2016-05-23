@@ -7,7 +7,7 @@ excerpt:
 tags: [android, effective-android]
 image:
   feature:
-date: 2016-05-20
+date: 2016-05-22
 ---
 
 ### 13. Lower the modifier
