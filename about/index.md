@@ -11,12 +11,20 @@ image:
 
 ## Moka is all about:
 
+* 자유로운 개발자 @_@_ - 
 * email : aud1220a@gmail.com
 * github : moka-a&nbsp;&nbsp;[[http://github.com/moka-a]](http://github.com/moka-a)
 * Insta : moka_q&nbsp;&nbsp;[[https://www.instagram.com/moka_q/]](https://www.instagram.com/moka_q/)
-* slack name : moka
-* 자유로운 개발자 @_@_ - 
+* slack name : moka ( gdg, emo 서식 )
 * ..
+
+
+### Tech
+
+* Android ( kotlin , java )
+* nodeJs / javascript
+* etc..
+
 
 ## my portfolio:
 
