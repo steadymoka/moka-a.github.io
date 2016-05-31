@@ -10,6 +10,10 @@ image:
 date: 2016-04-04
 ---
 
+<figure>
+    <img src="/images/lifecycle.png" alt="image">
+</figure>
+
 #### Activity Life Cycle 다시보기 
 OnCreate() - 최초생성될때 호출, UI 구성 ( setContentView() )<br>
 OnStart() - 거의 사용x<br>
