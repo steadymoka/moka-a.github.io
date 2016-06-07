@@ -83,6 +83,22 @@ OnDestroy() - 거의 사용x<br>
 : 상태바는 보이되, 뷰영역이 상태바 까지 모두 포함되어 겹쳐서 보이게 된다
  -> margin 을 위쪽에 두어 사용해야됨
 
+<br>
+<br>
+<br>
+<br>
 
-<!-- #####  -->
-<!-- -->
+#### SimpleDateFormat 사용시 주의사항
+DateForamtting 을 위해 SimpleDateFormat 을 많이 사용한다. 하지만 이것을 쓸때 주의사항으로 쓰레드 세이프 하지 않을수가 있다. 
+
+``` java
+SimpleDateFormat dateFormat_String = new SimpleDateFormat( "yyyy.MM.dd", Locale.getDefault() );
+// 이 객체는 `foramt()` 함수와 `parse()` 함수를 지원한다. 
+```
+같은 객체를 쓸경우 예상치 못한 에러가 발생할수 있어, 포메팅 스트링만 따로 빼두고 포멧팅 할때마다 새로운 객체를 생성 하는것이 안전하다.
+
+
+
+
+
+
