@@ -22,6 +22,7 @@ image:
 ### Tech
 
 * Android ( kotlin , java )
+    - MVP architecture / Retrofit 2.0 / Dagger 2.0 / RxAndroid / etc ..
 * nodeJs / javascript
 * etc..
 
