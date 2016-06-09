@@ -67,3 +67,9 @@ array.filter( function( item ) {
 
 ```
 
+<br>
+
+#### node 80번 포트로 pm2 돌릴때 루트권한 필요할경우
+`sudo setcap cap_net_bind_service=+ep /usr/sbin/node`
+
+
