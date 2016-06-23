@@ -165,7 +165,7 @@ System.out.println("연산횟수 : " + count.count());
 위와 같이 결과는 전혀 multicast 가 되지 않았습니다. 사실 publish().refCount() 를 빼고 쓴것과 동일한 결과입니다. 이유는 refCount 로 만들어진 Observable 에 처음 구독자가 subscribe 를 하게 됨으로써 connect 가 된것인데, 모든 item 이 emit 되고 난후 두번째 구독자가 구독이 되기 때문입니다. 
 위의 ** 이 찍힌 위치를 보면 알수 있습니다. 따라서 첫번째 구독자가 구독을 다하고, 두번째 구독자가 다시 새로운 스트림에 구독을 하게 됨으로써 얻고자했던 multicast 의 이점을 얻을수가 없습니다. 
 
-그러면 도대체 refCount() 는 어디서 어떻게 사용해야 될지 의문이 듭니다. 단순 Observable 을 가지고는 refCount 를 제대로 쓸수있는 예제가 전혀 생각이 나지 않습니다.
+그러면 도대체 refCount() 는 어디서 어떻게 사용해야 될지 의문이 듭니다. 
 
 하지만 Subject 을 활용하면 multicast 를 refCount 를 이용해서 활용할수 있는 방안이 있는것 같습니다. 이것 또한 개미님의 Rx Study 에서 예제로 보여주신 코드에서 가져온것 입니다. 아래는 PublishSubject 를 활용한 것입니다.
 
@@ -196,7 +196,7 @@ publishSubject.onNext( 4 );
 
 System.out.println("연산횟수 : " + count.count());
 
-/**
+/** 결과
     ________________map 연산________________
 
     subscriber1 : [1] 1466583114891
@@ -250,7 +250,7 @@ observable.subscribe(value -> {
 
 System.out.println("연산횟수 : " + count.count());
 
-/**
+/** 결과
     ________________map 연산________________
 
     subscriber1 : [1] 1466583051876
