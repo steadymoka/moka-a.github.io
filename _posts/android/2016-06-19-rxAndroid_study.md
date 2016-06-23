@@ -171,9 +171,13 @@ System.out.println("연산횟수 : " + count.count());
 
 첫번째로는 emit 하는 쓰레드를 바꿔주는 방법이 있습니다. subscribeOn() 을 이용해서, subscribe 하는 쓰레드와 다른 쓰레드로 ( io 쓰레드 등 ) 바꿔주면 subscribe 하면 다른 쓰레드에서 emit 이 일어나고, 다른 두번째 subscriber 도 구독을 시킬수 있게 됩니다. 
 
-그리고 여기서 재밌는점이 아이템을 소비하는 순서 입니다. 
+그리고 여기서 재밌는점이 아이템을 소비하는 순서 입니다. 이것은 하나의 Observable 에 subscribeOn() 만 io 쓰레드로 설정해주고 두개의 subscriber 가 구독하는데 observeOn 은 아무 설정 해주지 않았을때의 그림입니다.
 <img src="/images/rx-1.png">
-위 그림을 보시면 subscriber A 가 아이템을 소모하는데 200ms 가 걸리고, B 가 10ms 걸립니다. 그러면 B가 먼저 item 을 다 소비해버릴것 같지만 하나의 아이템이 emit 되면 A,B 순서대로 다 소비된후에 다음 아이템이 emit 이 되는것을 알수 있습니다.
+위 그림을 보시면 subscriber A 가 아이템을 소모하는데 200ms 가 걸리고, B 가 10ms 걸립니다. 그러면 B가 먼저 item 을 다 소비해버릴것 같지만 하나의 아이템이 emit 되면 A,B 순서대로 다 소비된후에 다음 아이템이 emit 이 되는것을 알수 있습니다. 
+
+그런데 이게 이렇게 되는 이유가 `subscribeOn()` 만 지정해주었기 때문에, 이후에 아이템이 소비되는 곳이 subscribe 하는 쓰레드와 동일 하기 때문에 발생하는 현상입니다. 
+
+그래서 만약에 각각의 subscribe 를 달때 `observeOn()` 을 따로 설정해주면 emit 하는 쓰레드와 각 subscriber 가 소비하는 쓰레드가 모두 다르다면, emit 은 emit 대로 하고 소비는 또 각자 알아서 소비하게 되는 것입니다.
 
 ##### Subject , Relay() 를 활용하여 ..
 
