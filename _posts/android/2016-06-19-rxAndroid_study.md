@@ -10,7 +10,7 @@ image:
 date: 2016-06-19
 ---
 <p style="font-size: 16px">
-RxJava 스터디에서 Hot / Cold Observable 에 관해서 얘기를 했었는데, 공식문서와 각종 블로그 자료들을 보며, 좀더 자세하게 알아보고 이해해보자. 간단하게는 Hot 은 즉시 소모..  Cold 는 모아서 소모.. 인 느낌 !?
+RxJava 스터디에서 Hot / Cold Observable 에 관해서 얘기를 했었는데, 공식문서와 각종 블로그 자료들을 보며, 좀더 자세하게 알아보고 이해해가는 과정이며, 다른 분들이 Slack 채널에서 고민하는 것들에 대해 이해를 하기 위함입니다.
 </p>
 <hr>
 
@@ -169,7 +169,7 @@ System.out.println("연산횟수 : " + count.count());
 
 ##### 쓰레드를 조절해서 ..
 
-첫번째로는 emit 하는 쓰레드를 바꿔주는 방법이 있습니다. subscribeOn() 을 이용해서, subscribe 하는 쓰레드와 다른 쓰레드로 ( io 쓰레드 등 ) 바꿔주면 subscribe 하면 다른 쓰레드에서 emit 이 일어나고, 다른 두번째 subscriber 도 구독을 시킬수 있게 됩니다. 
+첫번째로는 emit 하는 쓰레드를 바꿔주는 방법이 있습니다. subscribeOn() 을 이용해서, subscribe 하는 쓰레드와 다른 쓰레드로 ( io 쓰레드 등 ) 바꿔주면 subscribe 하면 다른 쓰레드에서 emit 이 일어나고, 다른 두번째 subscriber 도 구독을 시킬수 있게 됩니다. 확실치는 안지만, subscribe 하는 순간에 connect 가 일어나는데 그이후 아이템이 emit 되기전 subscribeOn() 으로 Thread 가 바뀌는 사이(Context 스위칭) 두번째 subscriber 도 구독을 시작 할수 있는것 같습니다.
 
 그리고 여기서 재밌는점이 아이템을 소비하는 순서 입니다. 이것은 하나의 Observable 에 subscribeOn() 만 io 쓰레드로 설정해주고 두개의 subscriber 가 구독하는데 observeOn 은 아무 설정 해주지 않았을때의 그림입니다.
 <img src="/images/rx-1.png">
