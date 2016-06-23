@@ -167,7 +167,17 @@ System.out.println("연산횟수 : " + count.count());
 
 그러면 도대체 refCount() 는 어디서 어떻게 사용해야 될지 의문이 듭니다. 
 
-하지만 Subject 을 활용하면 multicast 를 refCount 를 이용해서 활용할수 있는 방안이 있는것 같습니다. 이것 또한 개미님의 Rx Study 에서 예제로 보여주신 코드에서 가져온것 입니다. 아래는 PublishSubject 를 활용한 것입니다.
+##### 쓰레드를 조절해서 ..
+
+첫번째로는 emit 하는 쓰레드를 바꿔주는 방법이 있습니다. subscribeOn() 을 이용해서, subscribe 하는 쓰레드와 다른 쓰레드로 ( io 쓰레드 등 ) 바꿔주면 subscribe 하면 다른 쓰레드에서 emit 이 일어나고, 다른 두번째 subscriber 도 구독을 시킬수 있게 됩니다. 
+
+그리고 여기서 재밌는점이 아이템을 소비하는 순서 입니다. 
+<img src="/images/rx-1.png">
+위 그림을 보시면 subscriber A 가 아이템을 소모하는데 200ms 가 걸리고, B 가 10ms 걸립니다. 그러면 B가 먼저 item 을 다 소비해버릴것 같지만 하나의 아이템이 emit 되면 A,B 순서대로 다 소비된후에 다음 아이템이 emit 이 되는것을 알수 있습니다.
+
+##### Subject , Relay() 를 활용하여 ..
+
+두번째로, Subject 을 활용하면 multicast 를 refCount 를 이용해서 활용할수 있는 방안이 있는것 같습니다. 이것 또한 개미님의 Rx Study 에서 예제로 보여주신 코드에서 가져온것 입니다. 아래는 PublishSubject 를 활용한 것입니다.
 
 ```java
 PublishSubject<Integer> publishSubject = PublishSubject.create();
