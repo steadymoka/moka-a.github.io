@@ -26,3 +26,16 @@ onCreate
 onStartCommend
 - return 값 
     + START_NOT_STICKY :
+
+### View Background Animation
+
+``` xml
+<?xml version="1.0" encoding="utf-8"?>
+<transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/background_drawable1"/>
+    <item android:drawable="@drawable/background_drawable2"/>
+</transition>
+```
+
+애니메이션 넣고자하는 View 의 Background 에 resId 를 넣어주고, 코드상에서 바인딩된 해당 뷰의 getBackground() 를 가져오면 `Drawable` 객체로 나온다. 이 객체를 `TransitionDrawable` 로 캐스팅시켜 `startTransition(int durationMillis)` 를 호출하면 drawable1 에서 drawable2 로 Background 의 애니메이션이 동작한다. 
+
