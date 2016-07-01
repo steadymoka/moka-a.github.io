@@ -1,15 +1,19 @@
 <div class="navigation-wrapper">
-	<nav role="navigation" id="site-nav" class="animated drop">
-	    <ul>
+	<nav role="navigation" id="site-nav" class="animated drop" style="animation-duration: 0s;">
+	    <ul style="
+border-radius: 0px;
+background-color: white;
+margin: 0px;">
       {% for link in site.data.navigation %}
 		    {% if link.url contains 'http' %}
 		        {% assign domain = '' %}
 		    {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
-		    <li><a href="{{link.url | prepend: site.baseurl}}" class="active" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+		    <li><a href="{{link.url | prepend: site.baseurl}}" style="color: black; background-color: white;" class="active" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
 		  {% endfor %}
 	    </ul>
+	    <hr style="margin: 0 0 50px 0">
 	</nav>
 </div><!-- /.navigation-wrapper -->
 

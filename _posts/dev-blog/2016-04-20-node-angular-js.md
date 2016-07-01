@@ -2,7 +2,7 @@
 layout: post
 title: "NodeJS / AngularJS NOTE"
 modified:
-categories: javascript
+categories: blog
 excerpt:
 tags: [javascript]
 image:
