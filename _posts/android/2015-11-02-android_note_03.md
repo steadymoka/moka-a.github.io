@@ -97,8 +97,33 @@ SimpleDateFormat dateFormat_String = new SimpleDateFormat( "yyyy.MM.dd", Locale.
 ```
 같은 객체를 쓸경우 예상치 못한 에러가 발생할수 있어, 포메팅 스트링만 따로 빼두고 포멧팅 할때마다 새로운 객체를 생성 하는것이 안전하다.
 
+<br>
+<br>
+<br>
+<br>
 
+#### Alpha 값 설정 
 
+100% — FF<br>
+95% — F2<br>
+90% — E6<br>
+85% — D9<br>
+80% — CC<br>
+75% — BF<br>
+70% — B3<br>
+65% — A6<br>
+60% — 99<br>
+55% — 8C<br>
+50% — 80<br>
+45% — 73<br>
+40% — 66<br>
+35% — 59<br>
+30% — 4D<br>
+25% — 40<br>
+20% — 33<br>
+15% — 26<br>
+10% — 1A<br>
+5% — 0D<br>
+0% — 00<br>
 
-
-
+<br>
