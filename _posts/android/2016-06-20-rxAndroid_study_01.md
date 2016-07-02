@@ -10,7 +10,7 @@ image:
 date: 2016-06-19
 ---
 <p style="font-size: 16px">
-Slack 의 android-rxjava 채널에서 steve 님의 고민.. 스터디에서 gaemi 님의 Hot / Cold Observable 에 대해 .. 이해 하기 위한 과정으로 두번째 포스팅 입니다. 이번 포스팅은 ConnectableObservable 에 subscribeOn() 과 observeOn() 을 달았을때, 구독 과 소비의 순서에 관한 것입니다.
+이번 포스팅은 ConnectableObservable 에 subscribeOn() 과 observeOn() 로 쓰레드를 변경 해주었을 경우에, 구독 과 소비의 순서에 관한 것입니다. 쓰레드를 어떻게 설정해주냐에 따라서 내가 원하는 흐름대로 진행하도록 할수도 있고, 예상치 못하게 흘러 갈수도 있어, 주의해야할 사항이다. 
 </p>
 <hr>
 

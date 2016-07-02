@@ -10,14 +10,14 @@ image:
 date: 2016-06-19
 ---
 <p style="font-size: 16px">
-RxJava 스터디에서 Hot / Cold Observable 에 관해서 얘기를 했었는데, 공식문서와 각종 블로그 자료들을 보며, 좀더 자세하게 알아보고 이해해가는 과정이며, 다른 분들이 Slack 채널에서 고민하는 것들에 대해 이해를 하기 위함입니다.
+RxJava 스터디에서 Hot / Cold Observable 에 관해서 얘기를 했었는데, 공식문서와 각종 블로그 자료들을 보며, 좀더 자세하게 알아보고 이해해가는 과정이다. refCount 에 대해 제대로 이해하기위한 실험들이 포함되어 있고, multicast 를 잘 활용하기 위한 방향을 한번 알아 보았다.
 </p>
 <hr>
 
 # ConnectableOb.. & Observable / Hot & Cold
 
 [http://reactivex.io/documentation/observable.html](http://reactivex.io/documentation/observable.html) <br>
-“Hot” and “Cold” Observables 에 관하여 공식 사이트를 보면 다음과 같이 나와있다. 
+“Hot” and “Cold” Observables 에 관하여 공식 사이트를 보면 다음과 같이 나와있습니다. 
 
 >When does an Observable begin emitting its sequence of items? It depends on the Observable. A “hot” Observable may begin emitting items as soon as it is created, and so any observer who later subscribes to that Observable may start observing the sequence somewhere in the middle. A “cold” Observable, on the other hand, waits until an observer subscribes to it before it begins to emit items, and so such an observer is guaranteed to see the whole sequence from the beginning.
 
