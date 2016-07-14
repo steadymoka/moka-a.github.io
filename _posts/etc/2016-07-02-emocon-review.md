@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "(이상한모임)이모콘 모두의 관리"
+title: "스타트업이란?"
 modified: 
 categories: etc
 excerpt:
-tags: [이모콘, emo, 이상한모임]
+tags: [스타트업]
 image:
   feature:
 date: 2020-07-01
 ---
 
-## 이상한 모임. 모두의 관리
 협업툴 이용 /
  그랩, 플로우 - 개인적으론 그랩이 훨 나아보임
 컨푸런스 

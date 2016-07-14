@@ -15,11 +15,11 @@ image:
 * email : aud1220a@gmail.com
 * github : moka-a&nbsp;&nbsp;[[http://github.com/moka-a]](http://github.com/moka-a)
 * Insta : moka_q&nbsp;&nbsp;[[https://www.instagram.com/moka_q/]](https://www.instagram.com/moka_q/)
-* slack name : moka ( gdg, emo 서식 )
+* nick name : moka ( gdg, emo 서식 )
 * ..
 
 
-### Tech
+### Tech:
 
 * Android ( kotlin , java )
     - MVP architecture / Retrofit 2.0 / Dagger 2.0 / RxAndroid / etc ..
