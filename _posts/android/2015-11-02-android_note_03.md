@@ -127,3 +127,33 @@ SimpleDateFormat dateFormat_String = new SimpleDateFormat( "yyyy.MM.dd", Locale.
 0% — 00<br>
 
 <br>
+<br>
+<br>
+<br>
+
+#### Screen 강제로 꺠우기
+activity 또는 fragment 에  window 객체에 flag 를 설정해주면 된다. <br>
+(하지만 htc 단말에서 2.3.5 에서 안된다고 한다.)
+
+``` java
+val window = activity.window
+
+window.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED)
+window.addFlags(WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD)
+window.addFlags(WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON)
+```
+
+아래와 같이 하면 안좋다고 하는것 같은데 .. <br>
+
+``` java
+KeyguardManager km = (KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE);
+final KeyguardManager.KeyguardLock kl = km.newKeyguardLock("MyKeyguardLock");
+kl.disableKeyguard();
+
+PowerManager pm = (PowerManager) context.getSystemService(Context.POWER_SERVICE);
+wakeLock = pm.newWakeLock(
+    PowerManager.FULL_WAKE_LOCK | 
+    PowerManager.ACQUIRE_CAUSES_WAKEUP | 
+    PowerManager.ON_AFTER_RELEASE, "MyWakeLock");
+wakeLock.acquire();
+```

@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "스타트업이란?"
+title: "타이포그래피"
 modified: 
 categories: etc
 excerpt:
-tags: [스타트업]
+tags: [아티포그래피]
 image:
   feature:
 date: 2020-07-01
 ---
-
-
-스타트업이란 무엇일까 ??
 
