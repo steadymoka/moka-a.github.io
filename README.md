@@ -3,7 +3,7 @@
 
 [![Build Status](https://travis-ci.org/mmistakes/so-simple-theme.svg?branch=master)](https://travis-ci.org/mmistakes/so-simple-theme)
 
-[![Build Status](http://moka-a.github.io)](http://moka-a.github.io)
+[![Build Status](https://moka-a.github.io)](http://moka-a.github.io)
 
 # So Simple Theme
 
