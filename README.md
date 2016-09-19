@@ -1,5 +1,5 @@
 
-[![Build Status](moka-a.github.io)]
+[![Build Status](http://moka-a.github.io)](http://moka-a.github.io)
 
 # So Simple Theme
 
