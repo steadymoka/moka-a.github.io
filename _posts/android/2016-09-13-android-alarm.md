@@ -23,6 +23,7 @@ date: 2016-9-13
 
 하지만 알람앱을 GCM 을 통해 울리게 할수는 없을 것이다. GCM 도 어쨋든 네트워크 연결이 되어 있어야 되기 때문이다. 따라서 도즈 모드로 알람앱을 만들경우 어떻게 해야 하는지 살펴 봐야 한다.
 
+<br>
 
 ## Scheduling repeating alarm
 [https://developer.android.com/training/scheduling/alarms.html](https://developer.android.com/training/scheduling/alarms.html)
@@ -34,9 +35,12 @@ date: 2016-9-13
 
 그리고 주의사항으로, 폰이 꺼지면 등록된 AlarmManager 가 모두 초기화 된다. 따라서 BootReceiver 에서 트리거를 받아 AlarmManager 를 등록 해주어야 한다.
 
+<br>
 
 ## API level 19
 하지만 안드로이드 **api level 19 (KITKAT 4.4)** 이상부터는 `setRepeating()` 으로 지정해도 알람이 정확하게 오지 않는다. `setExact()` 함수를 이용해야지 정확한 시간에 알람이 오게 되어있다. 
+
+<br>
 
 ## API level 23
 그리고 안드로이드 **api level 23 (Marshmallow 6.0)** 이상부터는 위에서 언급했듯이 Doz 모드가 추가되어 `setExact()` 로도 정확한 시간을 보장할수가 없다. 따라서 새로 추가된 함수 `setExactAndAllowWhileIdle()` 를 이용하여 알람을 설정 해주어야 한다. 참고로 정확한 시간의 알람이 아니라면 `setAndAllowWhileIdle()` 함수를 이용하면 된다.
