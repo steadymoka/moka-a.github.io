@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 
+title:
 excerpt: "A simple and clean responsive Jekyll theme for words and photos."
 search_omit: true
 ---
@@ -17,7 +17,7 @@ height: 200px">
 
 <div style="
 width: 30%;
-font-weight: bold; 
+font-weight: bold;
 font-size: 28px;
 margin-left: 15px;
 padding-left: 10px;
@@ -25,18 +25,18 @@ margin-bottom: 15px;
 border-bottom: 1px solid #CCCCCC"><em>Latest Posts</em></div>
 <ul class="post-list">
 
-{% for post in site.posts limit:10 %} 
-  
-  <li style="border-bottom: 0px solid; margin-bottom: 12px">
+{% for post in site.posts limit:10 %}
+
+  <li style="border-bottom: 0px solid #CCCCCC; margin-bottom: 35px">
     <article>
-        <a href="{{ post.url | prepend: site.baseurl }}" style="font-size: 1.355rem">{{ post.title }}
-            <em class="entry-date" style="float: none;"><br>
-                <span style="font-size: 11px">posted on </span>
-                <time datetime="{{ post.date | date_to_xmlschema }}">
-                    {{ post.date | date: "%B %d, %Y" }}
-                </time>
-            </em>
-        </a>
+        <a href="{{ post.url | prepend: site.baseurl }}" style="font-size: 1.575rem">{{ post.title }}</a>
+        <em class="entry-date" style="float: none;"><br>
+            <span style="font-size: 11px">posted on </span>
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%B %d, %Y" }}
+            </time>
+        </em>
+        <div style="color: gray; margin-top: 8px">{{ post.excerpt }}</div>
     </article>
   </li>
 
