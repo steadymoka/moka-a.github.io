@@ -13,19 +13,37 @@
 
 <div id="main" role="main">
   <article class="entry">
-    {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
-    <div class="entry-wrapper" style="max-width: 66.5em;">
+    {% if page.image.feature %}
+      <img
+      src="{{ site.url }}/images/{{ page.image.feature }}"
+      class="entry-feature-image"
+      alt="{{ page.title }}" {% if site.logo == null %} style="margin-top:0;" {% endif %}>
+
+      {% if page.image.credit %}
+      <p class="image-credit">Photo Credit:
+        <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
+      </p>
+      {% endif %}
+    {% endif %}
+
+    <div class="entry-wrapper" {% if page.url == "/" or page.url == "/about/" %} style="max-width: 46.5em;" {%else%}  style="max-width: 66.5em;" {% endif %}>
       <header class="entry-header" style="max-width: 75%; display: inline-block;">
         <h1 class="">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
       </header>
 
-      {% if page.url == "/blog/" or page.url == "/" or page.url == "/tags/" %}
+      {% if page.url == "/blog/" or page.url == "/tags/" %}
         {% include sidebar.html %}
       {% endif %}
 
+      {% if page.url == "/" or page.url == "/about/" %}
+      <div class="entry-content" style="max-width: 100%">
+          {{ content }}
+      </div>
+      {% else %}
       <div class="entry-content" style="max-width: 75%">
           {{ content }}
       </div>
+      {% endif %}
 
     </div>
   </article>
