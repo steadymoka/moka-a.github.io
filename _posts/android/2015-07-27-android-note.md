@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드) 노트1 - 2015.07.28"
+title: "안드로이드 | 노트1 - 2015.07.28"
 modified:
 categories: android
 excerpt:
@@ -15,7 +15,7 @@ date: 2015-10-20T19:39:55-04:00
 #### 액션바
 롤리팝이되면 툴바로 변경이 되었다
 
-- public abstract void setDisplayHomeAsUpEnabled (boolean showHomeAsUp)<br> 
+- public abstract void setDisplayHomeAsUpEnabled (boolean showHomeAsUp)<br>
 액션바 아이콘을 네비게이터로 표시한다.
 - Android 4.0 ( API Level 14 ) 부터는 application icon 이 기본으로 action item 으로 작동하지 않는다. 기본으로 작동하게 하려면 setHomeButtonEnabled( true ) 를 호출해주어야 한다.
 <br>
@@ -50,7 +50,7 @@ event 의 getX()와 getY() 는 해당 뷰의 x,y 값을 리턴해주고, getRawX
 #### Animnation
 {% highlight java %}
 // 전체 속성
-@android:anim/accelerate_interpolator // 애니메이션을 점점 빠르게 
+@android:anim/accelerate_interpolator // 애니메이션을 점점 빠르게
 @android:startOffset // 애니메이션을 시작하기 전 대기
 @android:repeatCount // 반복 횟수 입니다 -1은 무한반복
 @android:repeatMode (restart, reverse) // 반복 모드 restart는 애니메이션을 처음부터 반복, reverse는 애니메이션을 반시계방향으로 다시 실행
@@ -58,7 +58,7 @@ event 의 getX()와 getY() 는 해당 뷰의 x,y 값을 리턴해주고, getRawX
 @android:fillAfter // 애니메이션 효과가 끝난뒤에 상태를 유지할지 결정, 기본은 false
 {% endhighlight java %}
 
- - translate<br> fromXDelta : "숫자" - 픽셀돤위의 뷰위치, "%" - 뷰너비의 퍼센트 연산, "%p" - 부모뷰의 대한 퍼센트 
+ - translate<br> fromXDelta : "숫자" - 픽셀돤위의 뷰위치, "%" - 뷰너비의 퍼센트 연산, "%p" - 부모뷰의 대한 퍼센트
  - scale
  - alpha
  - rotation
@@ -87,16 +87,16 @@ layoutManager.requestLayout();
 
 를 이용하여 그리드 카운트를 변경시켰는데, 다른 액티비티에 갔다가 와서 스크롤할때
 <br>Cannot call this method while RecyclerView is computing a layout or scrolling<br>
-에러가 발생한다 
+에러가 발생한다
 
 해결해야 한다
 구글 검색 결과 notifyDataSetChanged 호출을 Handler 를 이용하여 post 해주라고 하여 하니까 일단은 되는것 같다. flag 를 두어서 해결하는 방법도 있는듯 하다. >>>> 정확한 문제를 잘 모르겠다.
 
 그리고 또 다음 에러가 발생한다. recyclerView 내부 에러인듯 하다
 <br>Inconsistency detected. Invalid item position 14(offset:14).state:27<br>
-이에러는 뷰가 리프레쉬 될때 스크롤을 할시 발생하는 버그이다. isRefreshing 이라는 플레그값을 두어 onTouch 에서 리프레쉬 중일때 이벤트를 막는걸로 임시방편을 하였다. 
+이에러는 뷰가 리프레쉬 될때 스크롤을 할시 발생하는 버그이다. isRefreshing 이라는 플레그값을 두어 onTouch 에서 리프레쉬 중일때 이벤트를 막는걸로 임시방편을 하였다.
 
-내부 버그라 다음 릴리즈일때 고쳐진다는것 같은데, 정확한건 모르겠다. 
+내부 버그라 다음 릴리즈일때 고쳐진다는것 같은데, 정확한건 모르겠다.
 
 그리드 카운트를 바꾸는 좋은 방법이 있으면 알려줬으면 좋겠다.
 <br>
@@ -104,7 +104,7 @@ layoutManager.requestLayout();
 <br>
 <br>
 
-#### EditTextView 의 입력다한후 다음 버튼 없애기 
+#### EditTextView 의 입력다한후 다음 버튼 없애기
 {% highlight java %}
 	android:imeOptions="actionDone"
 {% endhighlight java %}
@@ -115,7 +115,7 @@ layoutManager.requestLayout();
 <br>
 
 #### EditTextView 입력에 따라 실시간으로 갱신해야 할때
-editText 에 addOnTextChange 를 호출하여 리스너를 등록한후 
+editText 에 addOnTextChange 를 호출하여 리스너를 등록한후
 afterText 를 구현한다.
 
 setOnFocusChanged 를 이용하여 hasFocus 가 false 일때를 구현하면 포커스를 잃을때 행동을 할수 있다.
@@ -124,7 +124,7 @@ setOnFocusChanged 를 이용하여 hasFocus 가 false 일때를 구현하면 포
 <br>
 <br>
 <br>
-    
+
 #### 이미지 resize 하기
 {% highlight java %}
     Bitmap sizingBmp = Bitmap.createScaledBitmap(bitmap, (int) width, (int)height, true);
@@ -134,12 +134,3 @@ setOnFocusChanged 를 이용하여 hasFocus 가 false 일때를 구현하면 포
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
-
-

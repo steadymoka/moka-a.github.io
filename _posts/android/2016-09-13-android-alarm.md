@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드) AlarmManager, in Doz mode"
+title: "안드로이드 | AlarmManager, in Doz mode"
 published: true
 modified:
 categories: android

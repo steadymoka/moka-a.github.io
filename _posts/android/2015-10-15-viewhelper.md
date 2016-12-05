@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드) ViewHelper"
+title: "안드로이드 | 애니메니션"
 modified:
 categories: android
 excerpt:

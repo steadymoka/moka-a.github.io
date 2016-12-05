@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드) 이벤트 전달 분석"
+title: "안드로이드 | 터치 이벤트 전달 분석"
 modified:
 categories: android
 excerpt:
@@ -14,14 +14,14 @@ date: 2015-09-27T19:39:55-04:00
 
 디바이스의 터치 정보는 시스템 서비스인 윈도우 매니저에 전달이 되고, 위도우 매니저는 화면에 떠있는 앱에 최종 전달한다.
 이까지의 과정은 궂이 알필요 없다. <br><br>
-	
+
 
 ### 터치이벤트 함수
 앱에서 터치 이벤트는 최초 액티비티를 통해 최초 전달되며, 액티비티의 두함수를 재정의하여 컨트롤 할수있다. 정의하지 않으면 화면에 배치된 각종 뷰에 순차적으로 전달 된다.
 
 {% highlight java %}
-dispatchTouchEvent 
-onTouchEvent 
+dispatchTouchEvent
+onTouchEvent
 {% endhighlight %}
 
 화면터치하면 먼저 dispatchTouchEvent 가 호출되고, 이어서 onTouchEvent 가 호출이 된다
@@ -30,7 +30,7 @@ onTouchEvent
 
 이벤트는 가장 최산단의 뷰( 액티비티 )부터 아례로 계층구조로 전달된다.<br><br>
 
-### 터치이벤트의 전달과정 
+### 터치이벤트의 전달과정
 최상단의 뷰에서 가장먼저 dispatchTouchEvent 가 호출되고, 하위뷰 의 dispatchTouchEvent 가 호출된다.
 제일 하위단의 자식뷰에서 dispatchTouchEvent 가 호출되면 onTouchEvent 를 호출하게 되고 이때 이벤트를 사용할거면 true 를 리턴시키면된다.
 최하위의 onTouchEvent 에서 false 를 리턴하게 되면 dispatchTouchEvent 는 false 를 리턴하게되며 상위단으로 넘어간다. 이때 다시 onTouchEvent 를 호출하게 되고 위 내용을 반복하여 호출한다. onTouchEvent 에서 true 를 리턴하게 되면 dispatchTouchEvent 도 true 를 리턴하게 되고 이떄는 onTouchEvent 를 호출하지 않게된다.
@@ -51,4 +51,3 @@ onIterceptTouchEvent 함수는 자식 뷰로 전달되는 터치 이벤트를 �
 
 ### requestDisallowInterceptTouchEvent 함수
 이 함수는 자식 뷰가 부모 뷰그룹에게 이벤트를 가로채지 않도록 요청한다. 매개변수로 true 를 넘겨주면된다. 단, 한번의 터치 프로세스에만 유효하다.
-

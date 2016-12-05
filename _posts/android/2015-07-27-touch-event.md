@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "안드로이드)[펌]이벤트 전달 메커니즘"
+title: "안드로이드 | [펌]이벤트 전달 메커니즘"
 modified:
 categories: android
 excerpt:
@@ -37,17 +37,17 @@ WindowManagerService는 system_server 프로세스에서 실행중인 서비스�
     2.Activity는 attach()에서 PhoneWindow 객체 생성. 이 PhoneWindow는 액티비티내 뷰들의 root로서 DecorView 인스턴스 포함.
 
       mWindow = PolicyManager.makeNewWindow(this);
-     
+
     3.ActivityManagerService는 ActivityThread를 호출하여 액티비티를 resume시킴.
       WindowManager 인스턴스가 생성되고 decorView가 WindowManager에 추가됨.
 
       ActivityThread.handleResumeActivity()
-     
+
     4.WindowManager의 addView(decor)에서 ViewRoot 인스턴스를 생성하고 viewRoot.setView(decor) 호출
     5.viewroot.setView(decor)에서 IWindowSession을 통해 WindowManagerService에 IWindow인스턴스를 추가
 
-      IWindowSession.add(window) 
-     
+      IWindowSession.add(window)
+
 
 #### DecorView 클래스
 - FrameLayout을 상속받으며, PhoneWindow의 내부 클래스로 정의됨
@@ -95,7 +95,7 @@ KeyEvent.aidl, MotionEvent.aidl : 프로세스간 전달되는 이벤트 정보
 - 안드로이드에서 진짜 이벤트 큐 역할
 - 인스턴스 생성시 새로운 쓰레드가 시작되면서 native boolean readEvent() 메소드를 무한루프 호출.
 - 리눅스 입력 디바이스로부터 실제 이벤트를 읽어들이는 로직은 네이티브 코드로 구현됨 : EventHub
-- 이벤트 읽는 과정 
+- 이벤트 읽는 과정
 
    KeyInputQueue.java -> JNI -> com_android_server_KeyInputQueue.cpp -> EventHub.cpp -> Device
 
@@ -121,7 +121,7 @@ KeyEvent.aidl, MotionEvent.aidl : 프로세스간 전달되는 이벤트 정보
     이벤트가 발생하면 WindowManagerService는 이벤트 큐의 이벤트를 IWindow에 전달
 
     IWindow.dispatchKey(event);
-     
+
     IWindow(ViewRoot.W 내부클래스가 구현)는 이벤트를 ViewRoot의 dispatchKey(event)에 다시 전달
     ViewRoot.dispatchKey()에서는 sendMessageAtTime(msg) 메소드를 통해 메시지 형태로 이벤트를 전달(왜 갑자기 여기서 Handler 메시지 형태로 이벤트를 전달하는가?)
     보내진 이벤트 메시지는 Handler를 상속받은 ViewRoot의 handleMessage(Message)가 처리
@@ -129,7 +129,7 @@ KeyEvent.aidl, MotionEvent.aidl : 프로세스간 전달되는 이벤트 정보
     deliverKeyEventToViewHierarchy()는 decor view의 dispatchKeyEvent(event) 호출
 
     mView.dispatchKeyEvent(event);
-     
+
     decor view의 dispatchKeyEvent()에서는 현재 뷰에 리스너가 등록되어 있으면 현재 view의 리스너 콜백함수를 호출함(즉 드디어 이벤트가 처리됨)
     등록된 리스너가 없으면 KeyEvent의 dispatch(callback) 호출 : callback은 view 자신
     KeyEvent.dispatch()는 다시 callback view의 onKeyDown() 호출 : 키 누름 이벤트인 경우
