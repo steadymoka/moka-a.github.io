@@ -50,7 +50,11 @@
         {% if author.avatar contains 'http' %}
           <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
         {% else %}
-          <img src="{{ site.url }}/images/profile/{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
+          <img style="background-image: url({{ site.url }}/images/profile/{{ author.avatar }});
+                      background-position: center;
+                      width:100px;
+                      height:100px;"
+              class="bio-photo" ></a>
         {% endif %}
         <span class="author vcard">By <span class="fn">{{ author.name }}</span></span>
         <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
