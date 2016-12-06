@@ -1,17 +1,19 @@
 ---
 layout: post
-title: "Android | MVP in Action Intro"
+title: "Android | MVP Intro in action"
 author:
 published: true
 modified:
 categories: android
-excerpt: 안드로이드의 패턴중 하나인 MVP 패턴에 대해, 샘플 Project 를 통해 실제로 어떻게 사용하는지 살펴 보자. BaseView, BasePresenter 등을 만들고 라이프사이클에 맞추어 동작하도록 구현하기 전에 왜 MVP 를 쓰고 전체적인 개념에 대해서 알아보자
+excerpt: 안드로이드의 패턴중 하나인 MVP 패턴에 대해서 알아보고, 어떤식으로 구조를 잡고 코드를 구현해 나가야 되는지 코드를 통해서 차근차근 살펴봅시다. 먼저 전체적으로 MVP 의 대한 개념을 주절주절 이지만 그림과 함께 설명 해보겠습니다.
 tags: [android, mvp]
 image:
   feature:
 date: 2016-12-5
 ---
 안드로이드 디자인 패턴 중 하나인 MVP 에 관한 내용입니다. 다른 패턴( MVC, MVCC .. )등 이 있지만 비교는 하지 않고 MVP 에 대해서만 설명할 예정이고, 샘플 프로젝트 및 코드등을 통해 실제 프로젝트에 적용 하기 까지의 과정을 적을 것입니다.
+
+<br>
 
 ## WHY MVP
 내가 생각 하는 MVP 의 가장 큰 장점은 Unit 테스트를 하기에 용이하다는 점이다. 안드로이드 소스코드 들을 테스트하려고 하다보면, 꼭 한번씩 context 가 필요하다던지, 뷰와 연관이 있거나, 디비 접근을 해야한다던지 메소드를 분리시키거나 등 어려움을 겪을수가 있다.
@@ -35,10 +37,16 @@ Presenter 에는 View 와 Model 을 interface 를 통해서 통신을 하게 될
 
 위의 말을 그대로 코드로 옮기면 MVP 구조잡는것은 끝 ! 이다.
 
+<br>
+
 ## 마무리
 일단 대략적으로 MVP 에 대한 설명을 해보았다. 다음 포스팅에서 구체적으로 코드를 통해 살펴 볼것이다.
 
-- [Android - MVP in Action with Code](http://moka-a.github.io/android/android-mvp-01/)
+<br>
+
+#### MVP 포스팅 및 샘플 프로젝트
+- [Android - MVP Presenter/View in action](http://moka-a.github.io/android/android-mvp-01/)
+- [Android - MVP in action](http://moka-a.github.io/android/android-mvp-02/)
 - [MVP 로 작성된 Sample Project - GitHub](https://github.com/moka-a/moka-sample-android)
 
 <br>

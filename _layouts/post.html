@@ -66,7 +66,21 @@
         {% if page.share %}{% include social-share.html %}{% endif %}
         {% if page.ads == true %}{% include ad-sidebar.html %}<!-- /.google-ads -->{% endif %}
       </footer>
+
+      <!-- entry-content -->
       <div class="entry-content">
+
+
+        <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:728px;height:90px"
+             data-ad-client="ca-pub-7847386025632674"
+             data-ad-slot="9316628547"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script> -->
+
+
         {{ content }}
 
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -83,7 +97,10 @@
           <div id="disqus_thread"></div><!-- /#disqus_thread -->
           {% include disqus-comments.html %}
         {% endif %}
-      </div><!-- /.entry-content -->
+      </div>
+      <!-- /.entry-content -->
+
+
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       {% if page.previous %}
