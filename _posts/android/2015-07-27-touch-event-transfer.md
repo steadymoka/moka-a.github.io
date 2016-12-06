@@ -3,11 +3,11 @@ layout: post
 title: "안드로이드 | 터치 이벤트 전달 분석"
 modified:
 categories: android
-excerpt:
+excerpt: 안드로이드가 이벤트 를 어떻게 처리하는지 명확하게 알아보자. onTouchEvent(), onIterceptTouchEvent() .. 등등
 tags: [android, event, 이벤트]
 image:
   feature:
-date: 2015-09-27T19:39:55-04:00
+date: 2016-12-02T19:39:55-04:00
 ---
 ### 터치이벤트의 종류
 다운 이벤트, 이동 이벤트, 업 이벤트  -> 순서대로 동작하며, 이동이벤트는 생략될수 있다. <br>
