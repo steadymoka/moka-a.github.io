@@ -45,8 +45,8 @@ Presenter 에는 View 와 Model 을 interface 를 통해서 통신을 하게 될
 <br>
 
 #### MVP 포스팅 및 샘플 프로젝트
-- [Android - MVP Presenter/View in action](http://moka-a.github.io/android/android-mvp-01/)
-- [Android - MVP in action](http://moka-a.github.io/android/android-mvp-02/)
+- [Android - MVP Presenter/View/Model in action](http://moka-a.github.io/android/android-mvp-01/) - 차근차근 구현해보는 포스팅 입니다.
+- [Android - MVP in action](http://moka-a.github.io/android/android-mvp-02/) - 실제 코드에서 어떻게 사용하고 있는지 살펴볼수있습니다.
 - [MVP 로 작성된 Sample Project - GitHub](https://github.com/moka-a/moka-sample-android)
 
 <br>
