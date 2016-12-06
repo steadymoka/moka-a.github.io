@@ -59,7 +59,7 @@
                       border: solid 1px #CCCCCC;"
               class="bio-photo" ></a>
         {% endif %}
-        <span class="author vcard" style="padding-left: 57px;">By <span class="fn">{{ author.name }}</span></span>
+        <span class="author vcard" style="margin-left: auto;margin-right: auto;">By <span class="fn">{{ author.name }}</span></span>
         <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
         {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}"><i class="fa fa-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
         {% if (site.owner.disqus-shortname and page.comments) or site.comments %}<span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>{% endif %}
@@ -72,7 +72,7 @@
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- moka_bottom -->
         <ins class="adsbygoogle"
-             style="display:inline-block;width:728px;height:90px"
+             style="display:inline-block;width:100%;height:90px"
              data-ad-client="ca-pub-7847386025632674"
              data-ad-slot="2325072143"></ins>
         <script>
