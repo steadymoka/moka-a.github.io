@@ -65,8 +65,9 @@ step 명령으로 idle 상태가 될때까지 해줍니다.
 
 <br>
 
-### AlarmManager, 포스팅 더보기
+### AlarmManager, 포스팅 더보기 / 실제 사용중인 앱
 - [안드로이드 | AlarmManager, in action](http://moka-a.github.io/android/android-alarm-01/)
+- [모닝카페-기상알람,가계부,일기](https://play.google.com/store/apps/details?id=com.moka.earylbird)
 
 <br>
 <br>

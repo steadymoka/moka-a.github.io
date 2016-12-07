@@ -158,8 +158,9 @@ class AlarmService : IntentService("AlarmService") {
 
 <br>
 
-### AlarmManager, 포스팅 더보기
+### AlarmManager, 포스팅 더보기 / 실제 사용중인 앱
 - [안드로이드 - AlarmManager, in Doz mode](http://moka-a.github.io/android/android-alarm/)
+- [모닝카페-기상알람,가계부,일기](https://play.google.com/store/apps/details?id=com.moka.earylbird)
 
 <br>
 <br>
