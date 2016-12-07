@@ -134,7 +134,7 @@ class AlarmService : IntentService("AlarmService") {
     }
 
     private fun notifyAlarm() {
-        if (dayInt == 1) { // 일용리이라면
+        if (dayInt == 1) { // 일요일이라면
            // 필요한 작업 추가
         }
     }
