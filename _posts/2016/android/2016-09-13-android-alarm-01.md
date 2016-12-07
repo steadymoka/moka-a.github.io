@@ -21,6 +21,7 @@ date: 2016-12-04
 
 ### AlarmManagerUtil
 AlarmManager 에 특정 시간의 알람을 등록 하는 유틸 클래스를 만듭니다.
+
 ```java
 public void setOnceAlarm(int hourOfDay, int minute, PendingIntent alarmPendingIntent) {
 	if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M )
