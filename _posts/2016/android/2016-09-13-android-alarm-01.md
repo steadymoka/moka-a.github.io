@@ -24,14 +24,14 @@ AlarmManager 에 특정 시간의 알람을 등록 하는 유틸 클래스를 �
 
 ```java
 public void setOnceAlarm(int hourOfDay, int minute, PendingIntent alarmPendingIntent) {
-	if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M )
-        alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent);
-		// alarmManager.setAlarmClock(new AlarmManager.AlarmClockInfo(getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent), alarmPendingIntent);
-        // 이전 포스팅 참고
-	else if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT )
-		alarmManager.setExact(AlarmManager.RTC_WAKEUP, getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent);
-	else
-		alarmManager.set(AlarmManager.RTC_WAKEUP, getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent);
+  if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.M )
+    alarmManager.setExactAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent);
+    // alarmManager.setAlarmClock(new AlarmManager.AlarmClockInfo(getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent), alarmPendingIntent);
+    // 이전 포스팅 참고
+  else if ( Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT )
+    alarmManager.setExact(AlarmManager.RTC_WAKEUP, getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent);
+  else
+    alarmManager.set(AlarmManager.RTC_WAKEUP, getTriggerAtMillis(hourOfDay, minute), alarmPendingIntent);
 }
 
 
@@ -104,18 +104,18 @@ private fun getRepeatingAlarmPendingIntent(dayInt: Int): PendingIntent {
 ```java
 public class AlarmReceiver extends WakefulBroadcastReceiver {
 
-	public static final String KEY_DAY_INT = "AlarmReceiver.KEY_DAY_INT";
+    public static final String KEY_DAY_INT = "AlarmReceiver.KEY_DAY_INT";
 
-	@Override
-	public void onReceive(Context context, Intent intent) {
-		int dayInt = intent.getIntExtra(KEY_DAY_INT, -1);
+    @Override
+    public void onReceive(Context context, Intent intent) {
+  	int dayInt = intent.getIntExtra(KEY_DAY_INT, -1);
 
-		if ( -1 != dayInt ) {
-			Intent service = new Intent(context, AlarmService.class);
-			service.putExtra(AlarmService.Companion.getKEY_DAY_INT(), dayInt);
-			startWakefulService(context, service);
-		}
-	}
+  	if ( -1 != dayInt ) {
+  		Intent service = new Intent(context, AlarmService.class);
+  		service.putExtra(AlarmService.Companion.getKEY_DAY_INT(), dayInt);
+  		startWakefulService(context, service);
+  	}
+    }
 }
 ```
 
