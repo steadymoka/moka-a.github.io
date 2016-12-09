@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android | MVP in action Intro"
+title: "Android | MVP, What is it? Why to use?"
 author:
 published: true
 modified:
@@ -52,9 +52,10 @@ date: 2016-12-5
 <br>
 
 #### 다른 MVP 포스팅 및 샘플 프로젝트
-- [Android - MVP Presenter/View/Model in action](http://moka-a.github.io/android/android-mvp-01/) - 차근차근 구현해보는 포스팅 입니다.
-- [Android - MVP in action](http://moka-a.github.io/android/android-mvp-02/) - 실제 코드에서 어떻게 사용하고 있는지 살펴볼수있습니다.
+- [Android - MVP Presenter/View/Model Code Lab](http://moka-a.github.io/android/android-mvp-01/) - 차근차근 MVP 구조를 구현해 해봅니다.
+- [Android - MVP in action with my app](http://moka-a.github.io/android/android-mvp-02/) - 실제 운영중인 서비스에서 어떻게 사용하고 있는지 살펴봅니다.
 - [Android - MVP in action Reference](http://moka-a.github.io/android/android-mvp-03/)
 - [MVP 로 작성된 Sample Project - GitHub](https://github.com/moka-a/moka-sample-android)
 
+<br>
 <br>
