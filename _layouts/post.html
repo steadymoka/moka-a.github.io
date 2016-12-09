@@ -34,7 +34,7 @@
 <div id="main" role="main">
   <article class="hentry">
     {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Image credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
-    <div class="entry-wrapper">
+    <div class="entry-wrapper" style="max-width: 66.5em;">
       <header class="entry-header">
         <span class="entry-tags">{% for tag in page.tags %}<a href="/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
         {% if page.link %}
@@ -73,13 +73,12 @@
 
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <ins class="adsbygoogle"
-             style="display:inline-block;width:728px;height:90px"
+             style="display:inline-block;width:100%;height:90px"
              data-ad-client="ca-pub-7847386025632674"
              data-ad-slot="9316628547"></ins>
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-
 
         {{ content }}
 
