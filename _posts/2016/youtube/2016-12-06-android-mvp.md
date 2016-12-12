@@ -47,7 +47,7 @@ date: 2016-12-5
 <br>
 
 ## 마무리
-일단 대략적으로 MVP 에 대한 설명을 해보았다. 다음 포스팅에서 구체적으로 코드를 통해 살펴 볼 것입니다.
+일단 대략적으로 MVP 에 대한 설명을 해보았다. 다음 포스팅에서 구체적으로 코드를 통해 살펴 볼 것입니다. 아래의 동영상 링크를 따라 가시면 동영상 자료를 보실수 있습니다.
 
 <br>
 
@@ -56,6 +56,7 @@ date: 2016-12-5
 - [Android - MVP in action with my app](http://moka-a.github.io/android/android-mvp-02/) - 실제 운영중인 서비스에서 어떻게 사용하고 있는지 살펴봅니다.
 - [Android - MVP in action Reference](http://moka-a.github.io/android/android-mvp-03/)
 - [MVP 로 작성된 Sample Project - GitHub](https://github.com/moka-a/moka-sample-android)
+- [동영상 설명 보기](https://youtu.be/Pydw-dzy2Vg)
 
 <br>
 <br>
