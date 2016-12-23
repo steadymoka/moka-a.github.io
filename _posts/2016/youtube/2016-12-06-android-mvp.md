@@ -49,6 +49,8 @@ date: 2016-12-5
 ## 마무리
 일단 대략적으로 MVP 에 대한 설명을 해보았다. 다음 포스팅에서 구체적으로 코드를 통해 살펴 볼 것입니다. 아래의 동영상 링크를 따라 가시면 동영상 자료를 보실수 있습니다.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Pydw-dzy2Vg" frameborder="0" allowfullscreen></iframe>
+<br>
 <br>
 
 #### 다른 MVP 포스팅 및 샘플 프로젝트
