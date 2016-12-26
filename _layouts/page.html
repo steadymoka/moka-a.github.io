@@ -10,7 +10,9 @@
 
 <body id="page">
 
-{% include navigation.html %}
+{% if page.url != "/wishlist/" %}
+  {% include navigation.html %}
+{% endif %}
 
 <div id="main" role="main">
   <article class="entry">

@@ -10,7 +10,10 @@ margin: 0px;">
 		    {% else %}
 		        {% assign domain = site.url %}
 		    {% endif %}
-		    <li><a href="{{link.url | prepend: site.baseurl}}" style="color: black; background-color: white;" class="active" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+
+				{% if link.title != "WishList" %}
+		    	<li><a href="{{link.url | prepend: site.baseurl}}" style="color: black; background-color: white;" class="active" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a></li>
+				{% endif %}
 		  {% endfor %}
 	    </ul>
 	    <hr style="margin: 0 0 50px 0">
