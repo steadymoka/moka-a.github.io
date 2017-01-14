@@ -4,7 +4,7 @@ locale: en_US
 description: ""
 logo: site-logo.png
 search: true
-url: "http://moka-a.github.io"
+url: "https://moka-a.github.io"
 comments: true
 
 # Jekyll configuration
