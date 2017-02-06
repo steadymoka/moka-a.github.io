@@ -98,3 +98,19 @@ CoordinatorLayout 을 최 상위에 사용하고, 내부에 AppBarLayout 과 Vie
 `<item name="android:backgroundDimEnabled">true</item>`
 
 이 두가지 속성을 주면 액티비티가 다이얼로그 처럼 동작하게 된다. 이떄 오른쪽 왼쪽에 여백이 들어가게 되면서 원하지 않는 결과가 나올수가 있는데, 이부분에서 삽질을 많이 하게 될수도 있다.
+
+<br><br>
+
+### 소프트 키보드 변화 리스너
+```java
+private fun checkSoftKeyBoard() {
+    rootView.viewTreeObserver.addOnGlobalLayoutListener {
+        val heightDiff = rootView.rootView.height - rootView.height
+        if (heightDiff > ScreenUtil.dipToPixel(activity, 200.0)) {
+            // if more than 200 dp, it's probably a keyboard...
+        }
+        else {
+        }
+    }
+}
+```
