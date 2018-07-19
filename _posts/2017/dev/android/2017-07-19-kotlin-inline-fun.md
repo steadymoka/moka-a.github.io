@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Kotlin- inline function"
+title: "Kotlin - inline function"
 author:
 published: true
 modified:
-categories: android
+categories: kotlin
 excerpt: Kotlin 의 inline function 에 대해서 자세히 알아봅니다.
 tags: [android, kotlin, inline function]
 image:

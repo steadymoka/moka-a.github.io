@@ -12,7 +12,7 @@ image:
 date: 2018-7-19
 ---
 
-### Kotlin coroutine
+## Kotlin coroutine
 `kotlinx.coroutines` 에는 다양한 표현들이 있습니다. `launch` 또는 `async` 등등의 코루틴의 핵심 요소들이 있습니다. 이러한 표현들을 사용하여 코루틴을 어떻게 프로젝트에서 사용하는지 소개 합니다.
 
 #### Coroutine basics
@@ -52,7 +52,7 @@ suspend fun doWorld() {
 }
 ```
 
-#### Using coroutine
+### Using coroutine
 이러한 점들을 활용하여 일반적으로 많이 사용될 만한 흐름을 좀더 깔끔하고 간결하게 코드를 작성할수 있게 됩니다. 조금 더 예시를 살펴 보면, 우선은 단순히 동기적으로 코드를 나열하면 아래와 같은 코드가 됩니다. 
 
 ``` kotlin
@@ -116,7 +116,8 @@ fun postItem(item: Item) {
 이 때 `launch` 의 파라미터로 `CoroutineContext` 를 넘길수가 있는데, 이 Context 를 이용하여 해당 코루틴이 어떤 쓰레드에서 실행이 되도록 할지 지정할 수 있습니다. `launch(UI) { ... }` 와 같이 실행을 하면 해당 launch 안의 코루틴은 UI 쓰레드에서 동작하게 됩니다.
 
 
-** 참고 ** <br>
-[Generate 코루틴 / Async & Await 코루틴](https://medium.com/@jooyunghan/%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%86%8C%EA%B0%9C-504cecc89407)<br>
+<br>
+[참고] <br>
+[Generator 코루틴 / Async & Await 코루틴](https://medium.com/@jooyunghan/%EC%BD%94%EB%A3%A8%ED%8B%B4-%EC%86%8C%EA%B0%9C-504cecc89407)<br>
 [Kotlin 코루틴은 어떻게 동작하는가? - 도창욱](https://www.youtube.com/watch?v=usaD7HyN598)<br>
 [Kotlin Conf 2017 - Introduction to Coroutine](https://www.youtube.com/watch?list=PLQ176FUIyIUY6UK1cgVsbdPYA3X5WLam5&v=_hfBv0a09Jc)<br>
