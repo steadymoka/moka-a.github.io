@@ -5,7 +5,7 @@ author:
 published: true
 modified:
 categories: etc
-excerpt: Coroutine 에 대한 소개
+excerpt: Thread 와 Coroutine 에 대해서
 tags: [thread, coroutine]
 image:
   feature:

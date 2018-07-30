@@ -2,118 +2,173 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({
     google_ad_client: "ca-pub-7847386025632674",
     enable_page_level_ads: true
   });
 </script> -->
-{% include head.html %}
+  {% include head.html %}
 </head>
 
 <style type="text/css">
-    blockquote {
-        font-family: $alt-font;
-        font-style: normal;
-        color: #777;
-        border-left: 4px solid #ddd;
-        padding-left: 20px;
-    }
-    p {
-      font-size: 22px;
-    }
+  @font-face {
+    font-family: 'SungDongGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/sdgu/SungDongGothic/SungDongGothicB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/sdgu/SungDongGothic/SungDongGothicB.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'SungDongGothic';
+    font-style: normal;
+    font-weight: 800;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/sdgu/SungDongGothic/SungDongGothicEB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/orgs/govs/sdgu/SungDongGothic/SungDongGothicEB.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoM.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Godo';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/godo/Godo/GodoB.woff') format('woff');
+  }
+
+  blockquote {
+    font-family: $alt-font;
+    font-style: normal;
+    color: #777;
+    border-left: 4px solid #ddd;
+    padding-left: 20px;
+  }
+
+  p {
+    font-family: 'Godo', sans-serif;
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 19px;
+  }
 </style>
 
 <body id="post">
 
-{% include navigation.html %}
+  {% include navigation.html %}
 
-<div id="main" role="main">
-  <article class="hentry">
-    {% if page.image.feature %}<img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo == null %}style="margin-top:0;"{% endif %}>{% if page.image.credit %}<p class="image-credit">Image credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></p>{% endif %}{% endif %}
-    <div class="entry-wrapper" style="max-width: 66.5em;">
-      <header class="entry-header">
-        <span class="entry-tags">{% for tag in page.tags %}<a href="/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
-        {% if page.link %}
-          <h1 class="entry-title"><a href="{{ page.link }}">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}<span class="link-arrow">&rarr;</span></a></h1>
-        {% else %}
-          <strong><h1 class="" style="font-family: 나눔고딕;">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1></strong>
-        {% endif %}
-      </header>
-      <footer class="entry-meta">
-        {% if page.author %}
-          {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %}
-        {% endif %}
-        {% if author.avatar contains 'http' %}
-          <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo"></a>
-        {% else %}
+  <div id="main" role="main">
+    <article class="hentry">
+      {% if page.image.feature %}
+      <img src="{{ site.url }}/images/{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" {% if site.logo==n
+        ull %}style="margin-top:0;" {% endif %}>{% if page.image.credit %}
+      <p class="image-credit">Image credit:
+        <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a>
+      </p>{% endif %}{% endif %}
+      <div class="entry-wrapper" style="max-width: 66.5em;">
+        <header class="entry-header">
+          <span class="entry-tags">{% for tag in page.tags %}
+            <a href="/tags/#{{ tag }}" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
+          {% if page.link %}
+          <h1 class="entry-title">
+            <a href="{{ page.link }}">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}
+              <span class="link-arrow">&rarr;</span>
+            </a>
+          </h1>
+          {% else %}
+          <strong>
+            <h1 class="" style="font-family: 나눔고딕;">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+          </strong>
+          {% endif %}
+        </header>
+        <footer class="entry-meta">
+          {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif
+          %} {% if author.avatar contains 'http' %}
+          <img src="{{ author.avatar }}" class="bio-photo" alt="{{ author.name }} bio photo">
+          </a>
+          {% else %}
           <img style="background-image: url({{ site.url }}/images/profile/{{ author.avatar }});
                       background-position: center;
                       width:100px;
                       height:100px;
                       margin-left: auto;
                       margin-right: auto;
-                      border: solid 1px #CCCCCC;"
-              class="bio-photo" ></a>
-        {% endif %}
-        <span class="author vcard" style="margin-left: auto;margin-right: auto;">By <span class="fn">{{ author.name }}</span></span>
-        <span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}"><i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time></span>
-        {% if page.modified %}<span class="entry-date date modified"><time datetime="{{ page.modified }}"><i class="fa fa-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time></span>{% endif %}
-        {% if page.share %}{% include social-share.html %}{% endif %}
-        {% if page.ads == true %}{% include ad-sidebar.html %}<!-- /.google-ads -->{% endif %}
-      </footer>
+                      border: solid 1px #CCCCCC;" class="bio-photo">
+          </a>
+          {% endif %}
+          <span class="author vcard" style="margin-left: auto;margin-right: auto;">By
+            <span class="fn">{{ author.name }}</span>
+          </span>
+          <span class="entry-date date published">
+            <time datetime="{{ page.date | date_to_xmlschema }}">
+              <i class="fa fa-calendar-o"></i> {{ page.date | date: "%B %d, %Y" }}</time>
+          </span>
+          {% if page.modified %}
+          <span class="entry-date date modified">
+            <time datetime="{{ page.modified }}">
+              <i class="fa fa-pencil"></i> {{ page.modified | date: "%B %d, %Y" }}</time>
+          </span>{% endif %} {% if page.share %}{% include social-share.html %}{% endif %} {% if page.ads == true %}{% include ad-sidebar.html
+          %}
+          <!-- /.google-ads -->{% endif %}
+        </footer>
 
-      <!-- entry-content -->
-      <div class="entry-content">
+        <!-- entry-content -->
+        <div class="entry-content">
 
 
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:100%;height:90px;border-bottom: 0px;"
-             data-ad-client="ca-pub-7847386025632674"
-             data-ad-slot="9316628547"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle" style="display:inline-block;width:100%;height:90px;border-bottom: 0px;" data-ad-client="ca-pub-7847386025632674"
+            data-ad-slot="9316628547"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
 
-        {{ content }}
+          {{ content }}
 
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- moka_bottom -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:100%;height:90px;border-bottom: 0px;"
-             data-ad-client="ca-pub-7847386025632674"
-             data-ad-slot="2325072143"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-        
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- moka_bottom -->
+          <ins class="adsbygoogle" style="display:inline-block;width:100%;height:90px;border-bottom: 0px;" data-ad-client="ca-pub-7847386025632674"
+            data-ad-slot="2325072143"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+
+        </div>
+        <!-- /.entry-content -->
+
+
       </div>
-      <!-- /.entry-content -->
-
-
-    </div><!-- /.entry-wrapper -->
-    <nav class="pagination" role="navigation">
-      {% if page.previous %}
+      <!-- /.entry-wrapper -->
+      <nav class="pagination" role="navigation">
+        {% if page.previous %}
         <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous</a>
-      {% endif %}
-      {% if page.next %}
+        {% endif %} {% if page.next %}
         <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next</a>
-      {% endif %}
-    </nav><!-- /.pagination -->
-  </article>
-</div><!-- /#main -->
+        {% endif %}
+      </nav>
+      <!-- /.pagination -->
+    </article>
+  </div>
+  <!-- /#main -->
 
-<div class="footer-wrapper">
-  <footer role="contentinfo" class="entry-wrapper">
-    {% include footer.html %}
-  </footer>
-</div><!-- /.footer-wrapper -->
+  <div class="footer-wrapper">
+    <footer role="contentinfo" class="entry-wrapper">
+      {% include footer.html %}
+    </footer>
+  </div>
+  <!-- /.footer-wrapper -->
 
-{% include scripts.html %}
+  {% include scripts.html %}
 
 </body>
+
 </html>
