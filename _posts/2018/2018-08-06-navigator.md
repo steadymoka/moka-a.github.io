@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Android Navigation"
+title: "Android Navigation in Jetpack"
 author:
 published: true
 modified:
@@ -9,11 +9,8 @@ excerpt: Android Navigation
 tags: [android, jetpack]
 image:
   feature:
-date: 2018-8-6
+date: 2018-8-10
 ---
-
-## Android Navigation
-
 <br>
 ### Principles of Navigation
 Navigation 은 앱내에서 라우팅 역활을 도와줄 컴포넌트 이다. 아래는 공식 홈페이지에 나와있는 Navigation 에 대한 개요이다.
