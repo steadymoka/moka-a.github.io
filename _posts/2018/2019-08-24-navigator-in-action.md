@@ -93,6 +93,9 @@ fun getWriteMoodPendingIntent(): PendingIntent {
 
 또한 Navigation 을 어떤식으로 구현을 했는지 내부적으로 좀 살펴보며 좀더 이해를 구하는 작업을 해야 겠다는 생각이 든다.
 
+<a href="freecat://buy_cash?success">TEST TEST s</a><br>
+<a href="freecat://buy_cash?fail">TEST TEST f</a>
+
 <br>
 <br>
 
