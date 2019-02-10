@@ -2,7 +2,7 @@
 layout: post
 title: "iOS | About layoutSpec in texture"
 author:
-published: false
+published: true
 modified:
 categories: ios
 excerpt: About layoutSpec in texture
