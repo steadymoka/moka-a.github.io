@@ -7,7 +7,7 @@
     "url": "git://github.com/mmistakes/so-simple-theme.git"
   },
   "scripts": {
-    "deploy": "git commit -a -m 'wip' && git push -u origin master"
+    "deploy": "git commit -a -m 'wip with deploy' && git push -u origin master"
   },
   "bugs": {
     "url": "https://github.com/mmistakes/so-simple-theme/issues"
