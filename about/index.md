@@ -11,26 +11,29 @@ image:
 
 ## Moka is all about:
 
-* 자유로운 개발자 @_@_ -
+* 자유로운 개발자 moka    @_@_ -
 * email : aud1220a@gmail.com
-* github : moka-a&nbsp;&nbsp;[[http://github.com/moka-a]](http://github.com/moka-a)
+* github : moka-a&nbsp;&nbsp;[[https://moka.land/about]](http://github.com/moka-a)
 * Insta : moka_q&nbsp;&nbsp;[[https://www.instagram.com/moka_q/]](https://www.instagram.com/moka_q/)
-* nick name : moka ( gdg, emo 서식 )
+* 
 * ..
 
 
 ### Tech:
 
-* Android ( kotlin , java )
-    - MVP architecture / Retrofit 2.0 / Dagger 2.0 / RxAndroid / Realm / etc ..
-* nodeJs / javascript
-* etc..
+* Android ( kotlin )
+* iOS 
+* nodeJs / graphql / javascript / typescript
+* vue.js / nuxt
+* AWS ( with serverless ) / dynamoDB
+* MVVM, MVP / DI / Rx / etc ..
 
 
 ## my service:
 
-* Morning Cafe   :   안드로이드앱 - [알람, 가계부, 일기 - 하루하루 나를위한 투자](https://play.google.com/store/apps/details?id=com.moka.earylbird)
-* ..
+* 하루하루 - 알람   :   우주최강 혁신적인 알람 어플 - [안드로이드 플레이 스토어에서 보기](https://play.google.com/store/apps/details?id=io.moka.dayday_alrm)
+* 하루하루 - 집중   :   집중할때 필수 어플 - [안드로이드 플레이 스토어에서 보기](https://play.google.com/store/apps/details?id=io.haruharu.pomodoro)
+* 하루하루 - 일기   :   이쁘고 감성적인 일기 어플 - [안드로이드 플레이 스토어에서 보기](https://play.google.com/store/apps/details?id=io.moka.dayday_diary)
+* ...
 
-<!-- * 캐스트미   :   [배우 캐스팅을 위한 원스톱 플렛폼](https://play.google.com/store/apps/details?id=com.mavlux.castme) / [www.castme.kr](http://www.castme.kr) -->
 <!-- [^1]: Example: *domain.com/category-name/post-title* -->
