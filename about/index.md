@@ -12,7 +12,7 @@ image:
 **자유로운 개발자 moka    @_@_ -**
 
 💌 email &nbsp;&nbsp; : &nbsp;&nbsp; aud1220a@gmail.com<br>
-🖥 github &nbsp;&nbsp; : &nbsp;&nbsp; moka-a&nbsp;&nbsp;[[https://moka.land/about]](http://github.com/moka-a)<br>
+🖥 github &nbsp;&nbsp; : &nbsp;&nbsp; moka-a&nbsp;&nbsp;[[https://github.com/moka-a]](http://github.com/moka-a)<br>
 📸 Insta &nbsp;&nbsp; : &nbsp;&nbsp; moka_q&nbsp;&nbsp;[[https://www.instagram.com/moka_q/]](https://www.instagram.com/moka_q/)<br>
 
 ..
