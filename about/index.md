@@ -20,7 +20,7 @@ image:
 
 ### Tech:
 
-* Android ( kotlin )
+* Android ( kotlin ) 
 * iOS 
 * nodeJs / graphql / javascript / typescript
 * vue.js / nuxt
